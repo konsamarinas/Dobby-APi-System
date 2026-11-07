@@ -5,25 +5,42 @@ from __future__ import annotations
 import json
 import logging
 import math
-from collections import Counter
+from copy import deepcopy
+from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Literal
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field, field_validator
+from .core.config import athens_today, cors_origins
+from .core.data_loader import load_datasets
+from .core.preprocessing import item_rows, local_date, local_timestamp, utc_timestamp
+from .forecasting.evaluation import rolling_origin_evaluation
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
-REC_MODEL_VERSION = "rec-v1.2"
-FORECAST_MODEL_VERSION = "fc-v0.9"
+REC_MODEL_VERSION = "rec-v1.3"
+FORECAST_MODEL_VERSION = "fc-v1.0"
 ORDER_TYPES = {"dine_in", "delivery", "takeaway"}
+CHANNELS = {"waiter_app", "e_menu", "kiosk"}
+BUSINESS_TIMEZONE = ZoneInfo("Europe/Athens")
 
 app = FastAPI(title="Dobby Restaurant Management API", version=REC_MODEL_VERSION,
               description="API προτάσεων και πρόβλεψης ζήτησης για το dobby.")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=cors_origins(),
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
+)
 logger = logging.getLogger(__name__)
 
 
@@ -37,10 +54,17 @@ class CartItem(BaseModel):
 class RecommendationRequest(BaseModel):
     business_id: str
     order_type: Literal["dine_in", "delivery", "takeaway"]
-    channel: str = "api"
+    channel: Literal["waiter_app", "e_menu", "kiosk"] = "e_menu"
     timestamp: datetime
-    cart: list[CartItem]
+    cart: list[CartItem] = Field(default_factory=list)
     limit: int = Field(default=3, ge=1, le=3)
+
+    @field_validator("timestamp")
+    @classmethod
+    def timestamp_must_be_timezone_aware(cls, value: datetime) -> datetime:
+        if value.tzinfo is None or value.utcoffset() is None:
+            raise ValueError("timestamp must be timezone-aware ISO 8601")
+        return value
 
 
 class Recommendation(BaseModel):
@@ -78,23 +102,62 @@ class ForecastResponse(BaseModel):
     model_version: str
 
 
-def read_json(name: str) -> list[dict[str, Any]]:
-    path = DATA_DIR / name
-    if not path.exists():
-        return []
-    with path.open(encoding="utf-8") as file:
-        value = json.load(file)
-    if not isinstance(value, list):
-        raise RuntimeError(f"{name} must contain a JSON array")
-    return value
+class HealthResponse(BaseModel):
+    status: Literal["ok"]
+    model_versions: dict[str, str]
 
 
-PRODUCTS = read_json("products.json")
-ORDERS = read_json("orders.json")
-SALES_STATS = read_json("sales_stats.json")
+class EvaluationPeriod(BaseModel):
+    from_: str = Field(alias="from")
+    to: str
+
+    model_config = {"populate_by_name": True}
+
+
+class RecommendationMetrics(BaseModel):
+    hit_rate_at_3: float
+    baseline_hit_rate_at_3: float
+    n_baskets: int
+    test_period: EvaluationPeriod | None
+    methodology: str = Field(
+        description="Global chronological 80/20 split, or business-local chronological 80/20 split."
+    )
+
+
+class ForecastMetrics(BaseModel):
+    wape: float | None
+    baseline_wape: float | None
+    level: Literal["product"]
+    n_series: int
+    test_period: EvaluationPeriod | None
+    methodology: str = Field(description="Rolling-origin chronological evaluation.")
+
+
+class BusinessImpact(BaseModel):
+    estimated_aov_uplift_pct: float | None
+    estimated_waste_reduction_pct: float | None
+    assumptions: str
+
+
+class MetricsResponse(BaseModel):
+    recommendations: RecommendationMetrics
+    forecast: ForecastMetrics
+    business_impact: BusinessImpact
+    model_versions: dict[str, str]
+
+
+PRODUCTS, ORDERS, SALES_STATS = load_datasets(DATA_DIR)
 PRODUCTS_DF = pd.json_normalize(PRODUCTS) if PRODUCTS else pd.DataFrame()
 ORDERS_DF = pd.json_normalize(ORDERS) if ORDERS else pd.DataFrame()
 SALES_STATS_DF = pd.json_normalize(SALES_STATS) if SALES_STATS else pd.DataFrame()
+PRODUCTS_BY_BUSINESS = defaultdict(dict)
+for _product in PRODUCTS:
+    PRODUCTS_BY_BUSINESS[_product.get("business_id")][_product.get("id")] = _product
+ORDERS_BY_BUSINESS = defaultdict(list)
+for _order in ORDERS:
+    ORDERS_BY_BUSINESS[_order.get("business_id")].append(_order)
+for _orders in ORDERS_BY_BUSINESS.values():
+    _orders.sort(key=lambda order: utc_timestamp(order.get("created_at")))
 
 
 @app.exception_handler(RequestValidationError)
@@ -110,7 +173,12 @@ async def validation_error(_: Request, exc: RequestValidationError) -> JSONRespo
 
 @app.exception_handler(HTTPException)
 async def http_error(_: Request, exc: HTTPException) -> JSONResponse:
-    code = "not_found" if exc.status_code == 404 else "unprocessable" if exc.status_code == 422 else "invalid_request"
+    code = (
+        "not_found" if exc.status_code == 404
+        else "unprocessable" if exc.status_code == 422
+        else "internal_error" if exc.status_code >= 500
+        else "invalid_request"
+    )
     return JSONResponse(status_code=exc.status_code, content={"error": {"code": code, "message": str(exc.detail)}})
 
 
@@ -124,29 +192,22 @@ async def internal_error(_: Request, exc: Exception) -> JSONResponse:
 
 
 def business_products(business_id: str) -> list[dict[str, Any]]:
-    return [p for p in PRODUCTS if p.get("business_id") == business_id]
+    return list(PRODUCTS_BY_BUSINESS.get(business_id, {}).values())
 
 
 def product_price(product: dict[str, Any], order_type: str) -> int:
     return int(product[{"dine_in": "price_store", "delivery": "price_delivery", "takeaway": "price_takeaway"}[order_type]])
 
 
-def item_rows(business_id: str, order_type: str | None = None) -> pd.DataFrame:
-    rows = []
-    for order in ORDERS:
-        if order.get("business_id") != business_id or (order_type and order.get("type") != order_type):
-            continue
-        timestamp = pd.to_datetime(order.get("created_at"), errors="coerce")
-        for item in order.get("items") or []:
-            rows.append({"order_id": order.get("id"), "product_id": item.get("product_id"),
-                         "category_id": (item.get("category") or {}).get("id"),
-                         "quantity": int(item.get("quantity", 0)), "timestamp": timestamp})
-    return pd.DataFrame(rows, columns=["order_id", "product_id", "category_id", "quantity", "timestamp"])
+@lru_cache(maxsize=32)
+def cached_item_rows(business_id: str, order_type: str | None = None) -> pd.DataFrame:
+    return item_rows(ORDERS_BY_BUSINESS, business_id, order_type)
 
 
 def recommendation_candidates(
     request: RecommendationRequest,
     excluded_order_id: str | None = None,
+    before: datetime | None = None,
 ) -> list[Recommendation]:
     if not business_products(request.business_id):
         raise HTTPException(status_code=404, detail=f"Unknown business_id: {request.business_id}")
@@ -158,11 +219,13 @@ def recommendation_candidates(
                 if p.get("available") and p.get("published") and request.order_type in (p.get("order_types") or [])]
     if not products:
         return []
-    rows = item_rows(request.business_id, request.order_type)
+    rows = cached_item_rows(request.business_id, request.order_type)
     if excluded_order_id is not None and not rows.empty:
         rows = rows[rows["order_id"] != excluded_order_id]
+    if before is not None and not rows.empty:
+        cutoff = local_timestamp(before)
+        rows = rows[rows["timestamp"] < cutoff]
     cart_ids = {item.product_id for item in request.cart}
-    cart_categories = {p.get("category", {}).get("id") for p in products if p.get("id") in cart_ids}
     popularity = Counter(rows["product_id"]) if not rows.empty else Counter()
     max_popularity = max(popularity.values(), default=1)
     candidates = []
@@ -174,7 +237,8 @@ def recommendation_candidates(
         time_score = 0.0
         if not product_rows.empty:
             hours = product_rows["timestamp"].dt.hour
-            time_score = min(float(((hours - request.timestamp.hour).abs() <= 2).mean()), 1.0)
+            request_hour = int(local_timestamp(request.timestamp).hour)
+            time_score = min(float(((hours - request_hour).abs() <= 2).mean()), 1.0)
         co_occurrence = 0.0
         if cart_ids and not rows.empty:
             basket_ids = rows.loc[rows["product_id"].isin(cart_ids), "order_id"].unique()
@@ -182,14 +246,27 @@ def recommendation_candidates(
                                 max(len(basket_ids), 1), 1.0)
         score = min(1.0, 0.45 * popularity[product_id] / max_popularity + 0.30 * co_occurrence + 0.25 * time_score)
         category_id = product.get("category", {}).get("id", "")
-        is_cross_sell = not cart_ids or category_id not in cart_categories
-        candidates.append((score or 0.15, product, is_cross_sell))
+        replacement = next(
+            (cart_product for cart_product in products
+             if cart_product.get("id") in cart_ids
+             and cart_product.get("category", {}).get("id") == category_id
+             and product_price(product, request.order_type) > product_price(cart_product, request.order_type)),
+            None,
+        )
+        is_cross_sell = replacement is None
+        if replacement is not None:
+            score = min(1.0, score + 0.4)
+        candidates.append((score or 0.15, product, is_cross_sell, replacement))
     candidates.sort(key=lambda value: (-value[0], value[1]["id"]))
     result = []
-    for score, product, is_cross_sell in candidates[:request.limit]:
+    for score, product, is_cross_sell, replacement in candidates[:request.limit]:
         kind = "cross_sell" if is_cross_sell else "upsell"
-        replaced = next(iter(cart_ids), None) if kind == "upsell" else None
-        reason = "Ταιριάζει υπέροχα με τις επιλογές σας και παραγγέλνεται συχνά μαζί τους." if is_cross_sell else "Δημοφιλής αναβάθμιση της επιλογής σας."
+        replaced = replacement.get("id") if replacement else None
+        product_name = replacement.get("name_gr", "την επιλογή σας") if replacement else "τις επιλογές σας"
+        reason = (
+            f"Ταιριάζει υπέροχα με {product_name} και παραγγέλνεται συχνά μαζί του."
+            if is_cross_sell else f"Δημοφιλής αναβάθμιση του {product_name}."
+        )
         result.append(Recommendation(product_id=product["id"], name=product.get("name_gr") or product.get("name_en", ""),
                                      category_id=product.get("category", {}).get("id", ""), type=kind,
                                      replaces_product_id=replaced, price=product_price(product, request.order_type),
@@ -203,14 +280,26 @@ def recommendations(request: RecommendationRequest) -> RecommendationResponse:
 
 
 def forecast_series(business_id: str, level: str, identifier: str, order_type: str | None) -> pd.Series:
-    rows = item_rows(business_id, order_type)
+    rows = cached_item_rows(business_id, order_type)
     if rows.empty:
         return pd.Series(dtype=float)
     key = "product_id" if level == "product" else "category_id"
     rows = rows[rows[key] == identifier].dropna(subset=["timestamp"])
     if rows.empty:
         return pd.Series(dtype=float)
-    return rows.groupby(rows["timestamp"].dt.floor("D"))["quantity"].sum().sort_index()
+    series = rows.groupby(rows["timestamp"].dt.floor("D"))["quantity"].sum().sort_index()
+    index = pd.date_range(series.index.min(), series.index.max(), freq="D")
+    return series.reindex(index, fill_value=0.0).astype(float)
+
+
+def seasonal_forecast(series: pd.Series, target: date) -> tuple[float, float, float]:
+    if series.empty:
+        return 0.0, 0.0, 0.0
+    values = series[series.index.day_of_week == target.weekday()]
+    quantity = float(values.tail(8).mean()) if not values.empty else float(series.tail(28).mean())
+    residuals = (values - quantity).abs()
+    spread = float(residuals.tail(8).mean()) if not residuals.empty else math.sqrt(quantity)
+    return max(0.0, quantity), max(0.0, quantity - 1.28 * spread), max(quantity, quantity + 1.28 * spread)
 
 
 @app.get("/forecast", response_model=ForecastResponse)
@@ -227,34 +316,33 @@ def forecast(
         raise HTTPException(status_code=404, detail=f"Unknown business_id: {business_id}")
     product = next((p for p in products if p["id"] == id), None)
     category_product = next((p for p in products if p.get("category", {}).get("id") == id), None)
-    if level == "product" and product is None or level == "category" and category_product is None:
+    if (level == "product" and product is None) or (level == "category" and category_product is None):
         raise HTTPException(status_code=404, detail=f"Unknown {level} id: {id}")
     name = product.get("name_gr", "") if product else category_product["category"].get("name_gr", "")
     series = forecast_series(business_id, level, id, order_type)
-    forecast_start = start_date or (date.today() + timedelta(days=1))
-    history = series.tail(28)
-    mean = float(history.mean()) if not history.empty else 0.0
-    spread = float(history.std(ddof=1)) if len(history) > 1 else math.sqrt(mean)
-    quantity = max(0.0, mean)
-    lower, upper = max(0.0, quantity - 1.28 * spread), quantity + 1.28 * spread
-    points = [ForecastPoint(date=forecast_start + timedelta(days=i), quantity=round(quantity, 2),
-                            lower=round(min(lower, quantity), 2), upper=round(max(upper, quantity), 2))
-              for i in range(horizon)]
+    forecast_start = start_date or (athens_today() + timedelta(days=1))
+    points = []
+    for offset in range(horizon):
+        target = forecast_start + timedelta(days=offset)
+        quantity, lower, upper = seasonal_forecast(series, target)
+        points.append(ForecastPoint(date=target, quantity=round(quantity, 2),
+                                    lower=round(min(lower, quantity), 2), upper=round(max(upper, quantity), 2)))
     return ForecastResponse(business_id=business_id, level=level, id=id, name=name,
                             order_type=order_type, forecast=points, model_version=FORECAST_MODEL_VERSION)
 
 
-@app.get("/metrics")
-def metrics(business_id: str | None = None) -> dict[str, Any]:
+def _calculate_metrics(business_id: str | None = None) -> dict[str, Any]:
+    if business_id is not None and not business_products(business_id):
+        raise HTTPException(status_code=404, detail=f"Unknown business_id: {business_id}")
     orders = [o for o in ORDERS if business_id is None or o.get("business_id") == business_id]
-    timestamps = [o.get("created_at", "")[:10] for o in orders if o.get("created_at")]
-    test_period = {"from": min(timestamps) if timestamps else date.today().isoformat(),
-                   "to": max(timestamps) if timestamps else date.today().isoformat()}
+    orders.sort(key=lambda order: order.get("created_at", ""))
     series_count = len({item.get("product_id") for order in orders for item in order.get("items", [])})
+    test_orders = orders[max(1, int(len(orders) * 0.8)):]
     recommendation_tests = 0
     recommendation_hits = 0
     baseline_hits = 0
-    for order in orders:
+    recommendation_dates: list[date] = []
+    for order in test_orders:
         distinct_items = list(dict.fromkeys(item.get("product_id") for item in order.get("items", [])))
         if len(distinct_items) < 2:
             continue
@@ -266,13 +354,16 @@ def metrics(business_id: str | None = None) -> dict[str, Any]:
         request = RecommendationRequest(
             business_id=order["business_id"],
             order_type=order["type"],
-            timestamp=pd.to_datetime(order["created_at"]).to_pydatetime(),
+            timestamp=local_timestamp(order["created_at"]).to_pydatetime().replace(tzinfo=BUSINESS_TIMEZONE),
             cart=visible_items,
         )
-        recommendations_for_test = recommendation_candidates(request, excluded_order_id=order["id"])
+        recommendations_for_test = recommendation_candidates(
+            request, excluded_order_id=order["id"], before=pd.to_datetime(order["created_at"]).to_pydatetime()
+        )
         recommended_ids = {item.product_id for item in recommendations_for_test}
-        product_rows = item_rows(order["business_id"], order["type"])
-        product_rows = product_rows[product_rows["order_id"] != order["id"]]
+        product_rows = cached_item_rows(order["business_id"], order["type"])
+        cutoff = local_timestamp(order["created_at"])
+        product_rows = product_rows[(product_rows["timestamp"] < cutoff) & (product_rows["order_id"] != order["id"])]
         popular_ids = (
             product_rows.groupby("product_id")["quantity"].sum()
             .sort_values(ascending=False)
@@ -281,6 +372,9 @@ def metrics(business_id: str | None = None) -> dict[str, Any]:
             .tolist()
         )
         recommendation_tests += 1
+        evaluated_date = local_date(order["created_at"])
+        if evaluated_date is not None:
+            recommendation_dates.append(evaluated_date)
         recommendation_hits += hidden_product_id in recommended_ids
         baseline_hits += hidden_product_id in popular_ids
 
@@ -288,39 +382,60 @@ def metrics(business_id: str | None = None) -> dict[str, Any]:
     baseline_hit_rate = baseline_hits / recommendation_tests if recommendation_tests else 0.0
     daily_totals: dict[tuple[str, date], float] = {}
     for order in orders:
-        order_date = pd.to_datetime(order.get("created_at")).date()
+        order_date = local_date(order.get("created_at"))
+        if order_date is None:
+            continue
         for item in order.get("items", []):
             key = (item["product_id"], order_date)
             daily_totals[key] = daily_totals.get(key, 0.0) + float(item.get("quantity", 0))
-    forecast_errors = 0.0
-    baseline_errors = 0.0
-    forecast_actuals = 0.0
-    for product_id in {key[0] for key in daily_totals}:
-        product_dates = sorted(day for item_id, day in daily_totals if item_id == product_id)
-        if len(product_dates) < 8:
-            continue
-        test_dates = product_dates[-7:]
-        train_values = [daily_totals[(product_id, day)] for day in product_dates[:-7]]
-        mean_prediction = sum(train_values) / len(train_values)
-        for test_day in test_dates:
-            actual = daily_totals[(product_id, test_day)]
-            previous_week = daily_totals.get((product_id, test_day - timedelta(days=7)), mean_prediction)
-            forecast_errors += abs(actual - mean_prediction)
-            baseline_errors += abs(actual - previous_week)
-            forecast_actuals += actual
-    wape = forecast_errors / forecast_actuals if forecast_actuals else 0.0
-    baseline_wape = baseline_errors / forecast_actuals if forecast_actuals else 0.0
+    forecast_metrics = rolling_origin_evaluation(daily_totals)
+    recommendation_period = (
+        {"from": min(recommendation_dates), "to": max(recommendation_dates)}
+        if recommendation_dates else None
+    )
+    methodology = (
+        "business-local chronological 80/20 split"
+        if business_id is not None else "global chronological 80/20 split"
+    )
     return {
         "recommendations": {"hit_rate_at_3": round(hit_rate, 4), "baseline_hit_rate_at_3": round(baseline_hit_rate, 4),
-                            "n_baskets": recommendation_tests, "test_period": test_period},
-        "forecast": {"wape": round(wape, 4), "baseline_wape": round(baseline_wape, 4), "level": "product",
-                     "n_series": series_count, "test_period": test_period},
-        "business_impact": {"estimated_aov_uplift_pct": 8.5, "estimated_waste_reduction_pct": 12.0,
-                            "assumptions": "Εκτίμηση από offline test set και υπόθεση σταθερής επισκεψιμότητας."},
+                            "n_baskets": recommendation_tests,
+                            "test_period": ({key: value.isoformat() for key, value in recommendation_period.items()}
+                                            if recommendation_period else None),
+                            "methodology": methodology},
+        "forecast": {"wape": round(forecast_metrics["wape"], 4) if forecast_metrics["wape"] is not None else None,
+                     "baseline_wape": round(forecast_metrics["baseline_wape"], 4)
+                     if forecast_metrics["baseline_wape"] is not None else None,
+                     "level": "product", "n_series": series_count,
+                     "test_period": forecast_metrics["test_period"],
+                     "methodology": "rolling-origin chronological evaluation"},
+        "business_impact": {"estimated_aov_uplift_pct": None, "estimated_waste_reduction_pct": None,
+                            "assumptions": "Δεν εκτιμάται χωρίς online experiment ή validated business assumptions."},
         "model_versions": {"recommendations": REC_MODEL_VERSION, "forecast": FORECAST_MODEL_VERSION},
     }
 
 
-@app.get("/health")
-def health() -> dict[str, Any]:
-    return {"status": "ok", "model_versions": {"recommendations": REC_MODEL_VERSION, "forecast": FORECAST_MODEL_VERSION}}
+@lru_cache(maxsize=8)
+def _cached_metrics(business_id: str | None = None) -> dict[str, Any]:
+    """Cache metrics for the immutable datasets loaded during application startup."""
+    return _calculate_metrics(business_id)
+
+
+def clear_metrics_cache() -> None:
+    """Invalidate metrics after a dataset reload or any in-process data replacement."""
+    _cached_metrics.cache_clear()
+
+
+@app.get("/metrics", response_model=MetricsResponse)
+def metrics(business_id: str | None = None) -> dict[str, Any]:
+    if business_id is not None and not business_products(business_id):
+        raise HTTPException(status_code=404, detail=f"Unknown business_id: {business_id}")
+    return deepcopy(_cached_metrics(business_id))
+
+
+@app.get("/health", response_model=HealthResponse)
+def health() -> HealthResponse:
+    return HealthResponse(
+        status="ok",
+        model_versions={"recommendations": REC_MODEL_VERSION, "forecast": FORECAST_MODEL_VERSION},
+    )
