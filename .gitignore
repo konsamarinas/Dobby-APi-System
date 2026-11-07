@@ -1,0 +1,14 @@
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+
+# macOS metadata
+.DS_Store
+
+# Local tooling and runtime output
+*.log

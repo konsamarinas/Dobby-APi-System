@@ -81,9 +81,8 @@ flowchart LR
 - Python `zoneinfo`
 - Docker and Docker Compose support
 
-Dependencies are declared in [`requirements.txt`](./requirements.txt). The
-repository also contains [`src/requirements.txt`](./src/requirements.txt),
-which pins the currently installed runtime set.
+Dependencies are declared in [`requirements.txt`](./requirements.txt), the
+single dependency manifest used by local setup and Docker.
 
 ## How it works
 
