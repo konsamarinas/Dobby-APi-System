@@ -1,0 +1,165 @@
+dobby Challenge — Format δεδομένων
+ΣΥΝΟΛΟ ΔΕΔΟΜΕΝΩΝ: ΚΑΤΑΛΟΓΟΣ ΠΡΟΪΟΝΤΩΝ (products)
+=====================================================================
+
+ΤΙ ΠΕΡΙΕΧΕΙ
+-----------
+Λίστα με τα προϊόντα ενός καταστήματος. Κάθε εγγραφή περιέχει:
+  - τα ονόματα και την περιγραφή του προϊόντος,
+  - την κατηγορία του,
+  - τιμές και ΦΠΑ ανά τύπο παραγγελίας (κατάστημα, delivery, takeaway),
+  - διαθεσιμότητα και ορατότητα,
+  - στοιχεία αποθέματος και ρυθμίσεις.
+
+ΓΕΝΙΚΟΙ ΚΑΝΟΝΕΣ
+---------------
+  - Όλα τα ποσά είναι ακέραιοι σε ΛΕΠΤΑ του ευρώ (π.χ. 380 = 3,80 €).
+  - Οι ημερομηνίες είναι σε μορφή ISO 8601.
+  - Τα name_gr / name_en μπορεί να είναι κενά· τότε τα ονόματα
+    βρίσκονται στο πεδίο names[].
+
+
+ΔΟΜΗ
+====
+
+[
+  {
+    "id": "<string>",
+    "business_id": "<string>",
+    "barcode_id": "<string>",
+    "name_gr": "<string>",
+    "name_en": "<string>",
+    "internal_name": "<string>",
+    "names": [
+      { "name": "<string>", "locale": "<string>" }
+    ],
+    "description_gr": "<string>",
+    "description_en": "<string>",
+    "avatar": "<url>",                          // προαιρετικό
+    "visibility": { "menu": <boolean> },
+
+    "category": {
+      "id": "<string>",
+      "business_id": "<string>",
+      "name_gr": "<string>",
+      "name_en": "<string>",
+      "internal_name": "<string>",
+      "names": <array | null>,
+      "print_order": <integer>,
+      "sequence": <integer>,
+      "product_sequence": <array | null>,
+      "order_types": <array | null>,
+      "created_at": "<datetime>",
+      "updated_at": "<datetime>"
+    },
+
+    "price_store": <integer>,
+    "price_delivery": <integer>,
+    "price_takeaway": <integer>,
+    "vat_rate": <integer>,
+    "vat_rate_delivery": <integer>,
+    "vat_rate_takeaway": <integer>,
+    "taxes": [
+      { "id": "<string>", "enabled_order_types": ["<string>"] }
+    ],
+    "my_data_classification": {},
+
+    "published": <boolean>,
+    "available": <boolean>,
+    "order_types": ["<string>"],
+
+    "quantity_total": <number>,
+    "quantity_portion": <number>,
+    "quantity_type": "<string>",
+    "quantity_notify": <number>,
+    "enable_measurement": <boolean>,
+    "optional_ingredients": <boolean>,
+    "ingredients_ticket_show_selected": <boolean>,
+
+    "created_at": "<datetime>",
+    "updated_at": "<datetime>"
+  }
+]
+
+
+ΠΕΡΙΓΡΑΦΗ ΠΕΔΙΩΝ
+================
+
+1. Ταυτότητα & ονόματα
+----------------------
+id                 Μοναδικό αναγνωριστικό του προϊόντος.
+business_id        Αναγνωριστικό του καταστήματος.
+barcode_id         Barcode του προϊόντος (κενό αν δεν υπάρχει).
+internal_name      Εσωτερικό όνομα, όπως το βλέπει το προσωπικό.
+name_gr, name_en   Όνομα στα ελληνικά / αγγλικά (μπορεί να είναι κενά).
+names[]            Ονόματα ανά γλώσσα: name και locale (π.χ. gr, en).
+description_gr,
+  description_en   Περιγραφή του προϊόντος για τον κατάλογο.
+avatar             URL εικόνας του προϊόντος (προαιρετικό).
+
+2. Κατηγορία — category
+-----------------------
+category.id, .business_id   Αναγνωριστικό κατηγορίας και καταστήματος.
+category.name_gr, .name_en,
+  .internal_name, .names    Ονόματα της κατηγορίας, π.χ. «Καφές» / «Coffee».
+category.print_order        Σειρά εκτύπωσης της κατηγορίας στα δελτία
+                            παραγγελίας.
+category.sequence           Θέση της κατηγορίας στον κατάλογο.
+category.product_sequence   Σειρά εμφάνισης των προϊόντων μέσα στην
+                            κατηγορία.
+category.order_types        Τύποι παραγγελίας όπου εμφανίζεται η κατηγορία
+                            (null = σε όλους).
+category.created_at,
+  .updated_at               Πότε δημιουργήθηκε / ενημερώθηκε η κατηγορία.
+
+3. Τιμές & ΦΠΑ
+--------------
+price_store         Τιμή για κατανάλωση στο κατάστημα (dine_in).
+price_delivery      Τιμή για delivery.
+price_takeaway      Τιμή για takeaway.
+vat_rate            Συντελεστής ΦΠΑ (%) για κατανάλωση στο κατάστημα.
+vat_rate_delivery   Συντελεστής ΦΠΑ (%) για delivery.
+vat_rate_takeaway   Συντελεστής ΦΠΑ (%) για takeaway.
+taxes[]             Πρόσθετες χρεώσεις/τέλη του προϊόντος (π.χ. καπάκι):
+  .id                  αναγνωριστικό της χρέωσης,
+  .enabled_order_types τύποι παραγγελίας όπου εφαρμόζεται.
+my_data_classification  Χαρακτηρισμός εσόδου για το myDATA της ΑΑΔΕ.
+
+4. Διαθεσιμότητα
+----------------
+published          Αν το προϊόν είναι ενεργό στον κατάλογο.
+available          Αν το προϊόν είναι διαθέσιμο για παραγγελία.
+visibility.menu    Αν εμφανίζεται στον ψηφιακό κατάλογο (e-Menu).
+order_types[]      Τύποι παραγγελίας όπου πωλείται: dine_in, delivery,
+                   takeaway.
+
+5. Απόθεμα & ρυθμίσεις
+----------------------
+quantity_total     Συνολικό διαθέσιμο απόθεμα.
+quantity_portion   Ποσότητα που καταναλώνεται ανά μερίδα.
+quantity_type      Μονάδα μέτρησης αποθέματος (π.χ. τεμάχια, γραμμάρια).
+quantity_notify    Όριο αποθέματος κάτω από το οποίο στέλνεται ειδοποίηση.
+enable_measurement Αν το προϊόν πωλείται με μέτρηση (π.χ. με το βάρος).
+optional_ingredients  Αν ο πελάτης μπορεί να επιλέξει/αφαιρέσει υλικά.
+ingredients_ticket_show_selected
+                   Αν στο δελτίο τυπώνονται μόνο τα επιλεγμένα υλικά.
+created_at, updated_at  Πότε δημιουργήθηκε / ενημερώθηκε το προϊόν.
+
+
+ΧΡΗΣΙΜΕΣ ΣΗΜΕΙΩΣΕΙΣ
+===================
+1. Η τιμή και ο ΦΠΑ αλλάζουν ανά τύπο παραγγελίας. Το ίδιο προϊόν
+   μπορεί να κοστίζει διαφορετικά στο κατάστημα και σε delivery —
+   λάβετέ το υπόψη στην πρόβλεψη και στις προτάσεις.
+
+2. Χρησιμοποιήστε τα available / published / order_types για να
+   προτείνετε μόνο προϊόντα που πωλούνται πραγματικά στο συγκεκριμένο
+   κανάλι.
+
+3. Η κατηγορία (category) είναι το επίπεδο συνάθροισης για την
+   πρόβλεψη ζήτησης ανά κατηγορία.
+
+4. Σύνδεση με άλλα σύνολα:
+   id            ←  items[].product_id στις Παραγγελίες
+   id            ←  id στα Στατιστικά πωλήσεων
+   category.id   ←  items[].category.id στις Παραγγελίες

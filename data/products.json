@@ -1,0 +1,6884 @@
+[
+  {
+    "id": "shop_university_prod_freddo_espresso",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "names": [
+      {
+        "name": "Freddo espresso",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo espresso",
+    "description_en": "Freddo espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "business_id": "shop_university",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 380,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_freddo_cappuccino",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "names": [
+      {
+        "name": "Freddo cappuccino",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo cappuccino",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo cappuccino",
+    "description_en": "Freddo cappuccino",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "business_id": "shop_university",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 430,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_espresso",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "names": [
+      {
+        "name": "Εσπρέσο",
+        "locale": "gr"
+      },
+      {
+        "name": "Espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Εσπρέσο",
+    "description_en": "Espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "business_id": "shop_university",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_filter_coffee",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "names": [
+      {
+        "name": "Καφές φίλτρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Filter coffee",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Καφές φίλτρου",
+    "description_en": "Filter coffee",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "business_id": "shop_university",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_iced_latte",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "names": [
+      {
+        "name": "Κρύο latte",
+        "locale": "gr"
+      },
+      {
+        "name": "Iced latte",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρύο latte",
+    "description_en": "Iced latte",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "business_id": "shop_university",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 430,
+    "price_delivery": 460,
+    "price_takeaway": 440,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_hot_chocolate",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "names": [
+      {
+        "name": "Ζεστή σοκολάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Hot chocolate",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ζεστή σοκολάτα",
+    "description_en": "Hot chocolate",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_hot_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 450,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_tea",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "names": [
+      {
+        "name": "Τσάι βουνού",
+        "locale": "gr"
+      },
+      {
+        "name": "Mountain tea",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσάι βουνού",
+    "description_en": "Mountain tea",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_hot_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_fresh_orange",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "names": [
+      {
+        "name": "Φυσικός χυμός πορτοκάλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Fresh orange juice",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Φυσικός χυμός πορτοκάλι",
+    "description_en": "Fresh orange juice",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 490,
+    "price_takeaway": 460,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_lemonade",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "names": [
+      {
+        "name": "Σπιτική λεμονάδα",
+        "locale": "gr"
+      },
+      {
+        "name": "Homemade lemonade",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπιτική λεμονάδα",
+    "description_en": "Homemade lemonade",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 440,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_soft_drink",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "names": [
+      {
+        "name": "Αναψυκτικό 330ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Soft drink 330ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Αναψυκτικό 330ml",
+    "description_en": "Soft drink 330ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 290,
+    "price_takeaway": 260,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_sparkling_water",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "names": [
+      {
+        "name": "Ανθρακούχο νερό",
+        "locale": "gr"
+      },
+      {
+        "name": "Sparkling water",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ανθρακούχο νερό",
+    "description_en": "Sparkling water",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 180,
+    "price_delivery": 210,
+    "price_takeaway": 190,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_water",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "names": [
+      {
+        "name": "Νερό 500ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Water 500ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Νερό 500ml",
+    "description_en": "Water 500ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "business_id": "shop_university",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 100,
+    "price_delivery": 120,
+    "price_takeaway": 110,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_koulouri",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "names": [
+      {
+        "name": "Κουλούρι ολικής",
+        "locale": "gr"
+      },
+      {
+        "name": "Whole wheat koulouri",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κουλούρι ολικής",
+    "description_en": "Whole wheat koulouri",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "business_id": "shop_university",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 120,
+    "price_delivery": 140,
+    "price_takeaway": 130,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_croissant",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "names": [
+      {
+        "name": "Κρουασάν βουτύρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Butter croissant",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρουασάν βουτύρου",
+    "description_en": "Butter croissant",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "business_id": "shop_university",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 230,
+    "price_delivery": 260,
+    "price_takeaway": 240,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_spinach_pie",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "names": [
+      {
+        "name": "Σπανακόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Spinach pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπανακόπιτα",
+    "description_en": "Spinach pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "business_id": "shop_university",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 320,
+    "price_delivery": 360,
+    "price_takeaway": 330,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_yogurt_honey",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "names": [
+      {
+        "name": "Γιαούρτι με μέλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek yogurt with honey",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Γιαούρτι με μέλι",
+    "description_en": "Greek yogurt with honey",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "business_id": "shop_university",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 460,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_club_sandwich",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "names": [
+      {
+        "name": "Κλαμπ σάντουιτς",
+        "locale": "gr"
+      },
+      {
+        "name": "Club sandwich",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κλαμπ σάντουιτς",
+    "description_en": "Club sandwich",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "business_id": "shop_university",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 850,
+    "price_delivery": 920,
+    "price_takeaway": 880,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_chicken_wrap",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "names": [
+      {
+        "name": "Wrap κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken wrap",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Wrap κοτόπουλο",
+    "description_en": "Chicken wrap",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "business_id": "shop_university",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_tuna_baguette",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "names": [
+      {
+        "name": "Μπαγκέτα με τόνο",
+        "locale": "gr"
+      },
+      {
+        "name": "Tuna baguette",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπαγκέτα με τόνο",
+    "description_en": "Tuna baguette",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "business_id": "shop_university",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 720,
+    "price_delivery": 790,
+    "price_takeaway": 740,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_veggie_toast",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "names": [
+      {
+        "name": "Τοστ λαχανικών",
+        "locale": "gr"
+      },
+      {
+        "name": "Veggie toast",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τοστ λαχανικών",
+    "description_en": "Veggie toast",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "business_id": "shop_university",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 560,
+    "price_delivery": 620,
+    "price_takeaway": 580,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_beef_burger",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "names": [
+      {
+        "name": "Burger μοσχαρίσιο",
+        "locale": "gr"
+      },
+      {
+        "name": "Beef burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger μοσχαρίσιο",
+    "description_en": "Beef burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_food",
+      "business_id": "shop_university",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 980,
+    "price_delivery": 1080,
+    "price_takeaway": 1020,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_chicken_burger",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "names": [
+      {
+        "name": "Burger κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger κοτόπουλο",
+    "description_en": "Chicken burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_food",
+      "business_id": "shop_university",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 900,
+    "price_delivery": 990,
+    "price_takeaway": 940,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_fries",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "names": [
+      {
+        "name": "Πατάτες τηγανητές",
+        "locale": "gr"
+      },
+      {
+        "name": "French fries",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Πατάτες τηγανητές",
+    "description_en": "French fries",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_food",
+      "business_id": "shop_university",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 390,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_greek_salad",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "names": [
+      {
+        "name": "Χωριάτικη σαλάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Χωριάτικη σαλάτα",
+    "description_en": "Greek salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_food",
+      "business_id": "shop_university",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_caesar_salad",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "names": [
+      {
+        "name": "Σαλάτα Caesar",
+        "locale": "gr"
+      },
+      {
+        "name": "Caesar salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σαλάτα Caesar",
+    "description_en": "Caesar salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_food",
+      "business_id": "shop_university",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 820,
+    "price_delivery": 890,
+    "price_takeaway": 840,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_nuts",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "names": [
+      {
+        "name": "Μείγμα ξηρών καρπών",
+        "locale": "gr"
+      },
+      {
+        "name": "Mixed nuts",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μείγμα ξηρών καρπών",
+    "description_en": "Mixed nuts",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_snack",
+      "business_id": "shop_university",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 340,
+    "price_takeaway": 310,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_granola_bar",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "names": [
+      {
+        "name": "Μπάρα δημητριακών",
+        "locale": "gr"
+      },
+      {
+        "name": "Granola bar",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπάρα δημητριακών",
+    "description_en": "Granola bar",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_snack",
+      "business_id": "shop_university",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_cheesecake",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "names": [
+      {
+        "name": "Τσίζκεϊκ",
+        "locale": "gr"
+      },
+      {
+        "name": "Cheesecake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσίζκεϊκ",
+    "description_en": "Cheesecake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "business_id": "shop_university",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 520,
+    "price_delivery": 570,
+    "price_takeaway": 540,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_chocolate_cake",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "names": [
+      {
+        "name": "Σοκολατόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Chocolate cake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σοκολατόπιτα",
+    "description_en": "Chocolate cake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "business_id": "shop_university",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 500,
+    "price_delivery": 550,
+    "price_takeaway": 520,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_apple_pie",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "names": [
+      {
+        "name": "Μηλόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Apple pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μηλόπιτα",
+    "description_en": "Apple pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "business_id": "shop_university",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 500,
+    "price_takeaway": 470,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_university_prod_ice_cream",
+    "business_id": "shop_university",
+    "barcode_id": "",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "names": [
+      {
+        "name": "Παγωτό δύο μπάλες",
+        "locale": "gr"
+      },
+      {
+        "name": "Two-scoop ice cream",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Παγωτό δύο μπάλες",
+    "description_en": "Two-scoop ice cream",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "business_id": "shop_university",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 480,
+    "price_delivery": 530,
+    "price_takeaway": 500,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_freddo_espresso",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "names": [
+      {
+        "name": "Freddo espresso",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo espresso",
+    "description_en": "Freddo espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "business_id": "shop_commercial",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 380,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_freddo_cappuccino",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "names": [
+      {
+        "name": "Freddo cappuccino",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo cappuccino",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo cappuccino",
+    "description_en": "Freddo cappuccino",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "business_id": "shop_commercial",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 430,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_espresso",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "names": [
+      {
+        "name": "Εσπρέσο",
+        "locale": "gr"
+      },
+      {
+        "name": "Espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Εσπρέσο",
+    "description_en": "Espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "business_id": "shop_commercial",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_filter_coffee",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "names": [
+      {
+        "name": "Καφές φίλτρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Filter coffee",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Καφές φίλτρου",
+    "description_en": "Filter coffee",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "business_id": "shop_commercial",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_iced_latte",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "names": [
+      {
+        "name": "Κρύο latte",
+        "locale": "gr"
+      },
+      {
+        "name": "Iced latte",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρύο latte",
+    "description_en": "Iced latte",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "business_id": "shop_commercial",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 430,
+    "price_delivery": 460,
+    "price_takeaway": 440,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_hot_chocolate",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "names": [
+      {
+        "name": "Ζεστή σοκολάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Hot chocolate",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ζεστή σοκολάτα",
+    "description_en": "Hot chocolate",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_hot_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 450,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_tea",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "names": [
+      {
+        "name": "Τσάι βουνού",
+        "locale": "gr"
+      },
+      {
+        "name": "Mountain tea",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσάι βουνού",
+    "description_en": "Mountain tea",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_hot_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_fresh_orange",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "names": [
+      {
+        "name": "Φυσικός χυμός πορτοκάλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Fresh orange juice",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Φυσικός χυμός πορτοκάλι",
+    "description_en": "Fresh orange juice",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 490,
+    "price_takeaway": 460,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_lemonade",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "names": [
+      {
+        "name": "Σπιτική λεμονάδα",
+        "locale": "gr"
+      },
+      {
+        "name": "Homemade lemonade",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπιτική λεμονάδα",
+    "description_en": "Homemade lemonade",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 440,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_soft_drink",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "names": [
+      {
+        "name": "Αναψυκτικό 330ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Soft drink 330ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Αναψυκτικό 330ml",
+    "description_en": "Soft drink 330ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 290,
+    "price_takeaway": 260,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_sparkling_water",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "names": [
+      {
+        "name": "Ανθρακούχο νερό",
+        "locale": "gr"
+      },
+      {
+        "name": "Sparkling water",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ανθρακούχο νερό",
+    "description_en": "Sparkling water",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 180,
+    "price_delivery": 210,
+    "price_takeaway": 190,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_water",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "names": [
+      {
+        "name": "Νερό 500ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Water 500ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Νερό 500ml",
+    "description_en": "Water 500ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "business_id": "shop_commercial",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 100,
+    "price_delivery": 120,
+    "price_takeaway": 110,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_koulouri",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "names": [
+      {
+        "name": "Κουλούρι ολικής",
+        "locale": "gr"
+      },
+      {
+        "name": "Whole wheat koulouri",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κουλούρι ολικής",
+    "description_en": "Whole wheat koulouri",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "business_id": "shop_commercial",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 120,
+    "price_delivery": 140,
+    "price_takeaway": 130,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_croissant",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "names": [
+      {
+        "name": "Κρουασάν βουτύρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Butter croissant",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρουασάν βουτύρου",
+    "description_en": "Butter croissant",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "business_id": "shop_commercial",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 230,
+    "price_delivery": 260,
+    "price_takeaway": 240,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_spinach_pie",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "names": [
+      {
+        "name": "Σπανακόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Spinach pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπανακόπιτα",
+    "description_en": "Spinach pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "business_id": "shop_commercial",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 320,
+    "price_delivery": 360,
+    "price_takeaway": 330,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_yogurt_honey",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "names": [
+      {
+        "name": "Γιαούρτι με μέλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek yogurt with honey",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Γιαούρτι με μέλι",
+    "description_en": "Greek yogurt with honey",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "business_id": "shop_commercial",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 460,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_club_sandwich",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "names": [
+      {
+        "name": "Κλαμπ σάντουιτς",
+        "locale": "gr"
+      },
+      {
+        "name": "Club sandwich",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κλαμπ σάντουιτς",
+    "description_en": "Club sandwich",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "business_id": "shop_commercial",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 850,
+    "price_delivery": 920,
+    "price_takeaway": 880,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_chicken_wrap",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "names": [
+      {
+        "name": "Wrap κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken wrap",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Wrap κοτόπουλο",
+    "description_en": "Chicken wrap",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "business_id": "shop_commercial",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_tuna_baguette",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "names": [
+      {
+        "name": "Μπαγκέτα με τόνο",
+        "locale": "gr"
+      },
+      {
+        "name": "Tuna baguette",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπαγκέτα με τόνο",
+    "description_en": "Tuna baguette",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "business_id": "shop_commercial",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 720,
+    "price_delivery": 790,
+    "price_takeaway": 740,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_veggie_toast",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "names": [
+      {
+        "name": "Τοστ λαχανικών",
+        "locale": "gr"
+      },
+      {
+        "name": "Veggie toast",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τοστ λαχανικών",
+    "description_en": "Veggie toast",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "business_id": "shop_commercial",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 560,
+    "price_delivery": 620,
+    "price_takeaway": 580,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_beef_burger",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "names": [
+      {
+        "name": "Burger μοσχαρίσιο",
+        "locale": "gr"
+      },
+      {
+        "name": "Beef burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger μοσχαρίσιο",
+    "description_en": "Beef burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "business_id": "shop_commercial",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 980,
+    "price_delivery": 1080,
+    "price_takeaway": 1020,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_chicken_burger",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "names": [
+      {
+        "name": "Burger κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger κοτόπουλο",
+    "description_en": "Chicken burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "business_id": "shop_commercial",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 900,
+    "price_delivery": 990,
+    "price_takeaway": 940,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_fries",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "names": [
+      {
+        "name": "Πατάτες τηγανητές",
+        "locale": "gr"
+      },
+      {
+        "name": "French fries",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Πατάτες τηγανητές",
+    "description_en": "French fries",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "business_id": "shop_commercial",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 390,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_greek_salad",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "names": [
+      {
+        "name": "Χωριάτικη σαλάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Χωριάτικη σαλάτα",
+    "description_en": "Greek salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "business_id": "shop_commercial",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_caesar_salad",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "names": [
+      {
+        "name": "Σαλάτα Caesar",
+        "locale": "gr"
+      },
+      {
+        "name": "Caesar salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σαλάτα Caesar",
+    "description_en": "Caesar salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "business_id": "shop_commercial",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 820,
+    "price_delivery": 890,
+    "price_takeaway": 840,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_nuts",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "names": [
+      {
+        "name": "Μείγμα ξηρών καρπών",
+        "locale": "gr"
+      },
+      {
+        "name": "Mixed nuts",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μείγμα ξηρών καρπών",
+    "description_en": "Mixed nuts",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_snack",
+      "business_id": "shop_commercial",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 340,
+    "price_takeaway": 310,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_granola_bar",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "names": [
+      {
+        "name": "Μπάρα δημητριακών",
+        "locale": "gr"
+      },
+      {
+        "name": "Granola bar",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπάρα δημητριακών",
+    "description_en": "Granola bar",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_snack",
+      "business_id": "shop_commercial",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_cheesecake",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "names": [
+      {
+        "name": "Τσίζκεϊκ",
+        "locale": "gr"
+      },
+      {
+        "name": "Cheesecake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσίζκεϊκ",
+    "description_en": "Cheesecake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "business_id": "shop_commercial",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 520,
+    "price_delivery": 570,
+    "price_takeaway": 540,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_chocolate_cake",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "names": [
+      {
+        "name": "Σοκολατόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Chocolate cake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σοκολατόπιτα",
+    "description_en": "Chocolate cake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "business_id": "shop_commercial",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 500,
+    "price_delivery": 550,
+    "price_takeaway": 520,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_apple_pie",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "names": [
+      {
+        "name": "Μηλόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Apple pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μηλόπιτα",
+    "description_en": "Apple pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "business_id": "shop_commercial",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 500,
+    "price_takeaway": 470,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_commercial_prod_ice_cream",
+    "business_id": "shop_commercial",
+    "barcode_id": "",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "names": [
+      {
+        "name": "Παγωτό δύο μπάλες",
+        "locale": "gr"
+      },
+      {
+        "name": "Two-scoop ice cream",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Παγωτό δύο μπάλες",
+    "description_en": "Two-scoop ice cream",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "business_id": "shop_commercial",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 480,
+    "price_delivery": 530,
+    "price_takeaway": 500,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_freddo_espresso",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "names": [
+      {
+        "name": "Freddo espresso",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo espresso",
+    "description_en": "Freddo espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "business_id": "shop_tourist",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 380,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_freddo_cappuccino",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "names": [
+      {
+        "name": "Freddo cappuccino",
+        "locale": "gr"
+      },
+      {
+        "name": "Freddo cappuccino",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Freddo cappuccino",
+    "description_en": "Freddo cappuccino",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "business_id": "shop_tourist",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 430,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_espresso",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "names": [
+      {
+        "name": "Εσπρέσο",
+        "locale": "gr"
+      },
+      {
+        "name": "Espresso",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Εσπρέσο",
+    "description_en": "Espresso",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "business_id": "shop_tourist",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_filter_coffee",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "names": [
+      {
+        "name": "Καφές φίλτρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Filter coffee",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Καφές φίλτρου",
+    "description_en": "Filter coffee",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "business_id": "shop_tourist",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_iced_latte",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "names": [
+      {
+        "name": "Κρύο latte",
+        "locale": "gr"
+      },
+      {
+        "name": "Iced latte",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρύο latte",
+    "description_en": "Iced latte",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "business_id": "shop_tourist",
+      "name_gr": "Καφές",
+      "name_en": "Coffee",
+      "internal_name": "coffee",
+      "names": [
+        {
+          "name": "Καφές",
+          "locale": "gr"
+        },
+        {
+          "name": "Coffee",
+          "locale": "en"
+        }
+      ],
+      "print_order": 1,
+      "sequence": 1,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 430,
+    "price_delivery": 460,
+    "price_takeaway": 440,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_hot_chocolate",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "names": [
+      {
+        "name": "Ζεστή σοκολάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Hot chocolate",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ζεστή σοκολάτα",
+    "description_en": "Hot chocolate",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_hot_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 450,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_tea",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "names": [
+      {
+        "name": "Τσάι βουνού",
+        "locale": "gr"
+      },
+      {
+        "name": "Mountain tea",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσάι βουνού",
+    "description_en": "Mountain tea",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_hot_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages",
+      "internal_name": "hot beverages",
+      "names": [
+        {
+          "name": "Ζεστά ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Hot beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 3,
+      "sequence": 3,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 330,
+    "price_takeaway": 310,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_fresh_orange",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "names": [
+      {
+        "name": "Φυσικός χυμός πορτοκάλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Fresh orange juice",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Φυσικός χυμός πορτοκάλι",
+    "description_en": "Fresh orange juice",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 490,
+    "price_takeaway": 460,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_lemonade",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "names": [
+      {
+        "name": "Σπιτική λεμονάδα",
+        "locale": "gr"
+      },
+      {
+        "name": "Homemade lemonade",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπιτική λεμονάδα",
+    "description_en": "Homemade lemonade",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 400,
+    "price_delivery": 440,
+    "price_takeaway": 410,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_soft_drink",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "names": [
+      {
+        "name": "Αναψυκτικό 330ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Soft drink 330ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Αναψυκτικό 330ml",
+    "description_en": "Soft drink 330ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 290,
+    "price_takeaway": 260,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_sparkling_water",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "names": [
+      {
+        "name": "Ανθρακούχο νερό",
+        "locale": "gr"
+      },
+      {
+        "name": "Sparkling water",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Ανθρακούχο νερό",
+    "description_en": "Sparkling water",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 180,
+    "price_delivery": 210,
+    "price_takeaway": 190,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_water",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "names": [
+      {
+        "name": "Νερό 500ml",
+        "locale": "gr"
+      },
+      {
+        "name": "Water 500ml",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Νερό 500ml",
+    "description_en": "Water 500ml",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "business_id": "shop_tourist",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages",
+      "internal_name": "cold beverages",
+      "names": [
+        {
+          "name": "Κρύα ροφήματα",
+          "locale": "gr"
+        },
+        {
+          "name": "Cold beverages",
+          "locale": "en"
+        }
+      ],
+      "print_order": 2,
+      "sequence": 2,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 100,
+    "price_delivery": 120,
+    "price_takeaway": 110,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_koulouri",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "names": [
+      {
+        "name": "Κουλούρι ολικής",
+        "locale": "gr"
+      },
+      {
+        "name": "Whole wheat koulouri",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κουλούρι ολικής",
+    "description_en": "Whole wheat koulouri",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "business_id": "shop_tourist",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 120,
+    "price_delivery": 140,
+    "price_takeaway": 130,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_croissant",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "names": [
+      {
+        "name": "Κρουασάν βουτύρου",
+        "locale": "gr"
+      },
+      {
+        "name": "Butter croissant",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κρουασάν βουτύρου",
+    "description_en": "Butter croissant",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "business_id": "shop_tourist",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 230,
+    "price_delivery": 260,
+    "price_takeaway": 240,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_spinach_pie",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "names": [
+      {
+        "name": "Σπανακόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Spinach pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σπανακόπιτα",
+    "description_en": "Spinach pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "business_id": "shop_tourist",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 320,
+    "price_delivery": 360,
+    "price_takeaway": 330,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_yogurt_honey",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "names": [
+      {
+        "name": "Γιαούρτι με μέλι",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek yogurt with honey",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Γιαούρτι με μέλι",
+    "description_en": "Greek yogurt with honey",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "business_id": "shop_tourist",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast",
+      "internal_name": "breakfast",
+      "names": [
+        {
+          "name": "Πρωινό",
+          "locale": "gr"
+        },
+        {
+          "name": "Breakfast",
+          "locale": "en"
+        }
+      ],
+      "print_order": 4,
+      "sequence": 4,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 420,
+    "price_delivery": 460,
+    "price_takeaway": 430,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_club_sandwich",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "names": [
+      {
+        "name": "Κλαμπ σάντουιτς",
+        "locale": "gr"
+      },
+      {
+        "name": "Club sandwich",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Κλαμπ σάντουιτς",
+    "description_en": "Club sandwich",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "business_id": "shop_tourist",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 850,
+    "price_delivery": 920,
+    "price_takeaway": 880,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_chicken_wrap",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "names": [
+      {
+        "name": "Wrap κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken wrap",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Wrap κοτόπουλο",
+    "description_en": "Chicken wrap",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "business_id": "shop_tourist",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_tuna_baguette",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "names": [
+      {
+        "name": "Μπαγκέτα με τόνο",
+        "locale": "gr"
+      },
+      {
+        "name": "Tuna baguette",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπαγκέτα με τόνο",
+    "description_en": "Tuna baguette",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "business_id": "shop_tourist",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 720,
+    "price_delivery": 790,
+    "price_takeaway": 740,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_veggie_toast",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "names": [
+      {
+        "name": "Τοστ λαχανικών",
+        "locale": "gr"
+      },
+      {
+        "name": "Veggie toast",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τοστ λαχανικών",
+    "description_en": "Veggie toast",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "business_id": "shop_tourist",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches",
+      "internal_name": "sandwiches",
+      "names": [
+        {
+          "name": "Σάντουιτς",
+          "locale": "gr"
+        },
+        {
+          "name": "Sandwiches",
+          "locale": "en"
+        }
+      ],
+      "print_order": 5,
+      "sequence": 5,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 560,
+    "price_delivery": 620,
+    "price_takeaway": 580,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_beef_burger",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "names": [
+      {
+        "name": "Burger μοσχαρίσιο",
+        "locale": "gr"
+      },
+      {
+        "name": "Beef burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger μοσχαρίσιο",
+    "description_en": "Beef burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "business_id": "shop_tourist",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 980,
+    "price_delivery": 1080,
+    "price_takeaway": 1020,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_chicken_burger",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "names": [
+      {
+        "name": "Burger κοτόπουλο",
+        "locale": "gr"
+      },
+      {
+        "name": "Chicken burger",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Burger κοτόπουλο",
+    "description_en": "Chicken burger",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "business_id": "shop_tourist",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 900,
+    "price_delivery": 990,
+    "price_takeaway": 940,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_fries",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "names": [
+      {
+        "name": "Πατάτες τηγανητές",
+        "locale": "gr"
+      },
+      {
+        "name": "French fries",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Πατάτες τηγανητές",
+    "description_en": "French fries",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "business_id": "shop_tourist",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 350,
+    "price_delivery": 390,
+    "price_takeaway": 360,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_greek_salad",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "names": [
+      {
+        "name": "Χωριάτικη σαλάτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Greek salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Χωριάτικη σαλάτα",
+    "description_en": "Greek salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "business_id": "shop_tourist",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 780,
+    "price_delivery": 850,
+    "price_takeaway": 800,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_caesar_salad",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "names": [
+      {
+        "name": "Σαλάτα Caesar",
+        "locale": "gr"
+      },
+      {
+        "name": "Caesar salad",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σαλάτα Caesar",
+    "description_en": "Caesar salad",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "business_id": "shop_tourist",
+      "name_gr": "Φαγητό",
+      "name_en": "Food",
+      "internal_name": "food",
+      "names": [
+        {
+          "name": "Φαγητό",
+          "locale": "gr"
+        },
+        {
+          "name": "Food",
+          "locale": "en"
+        }
+      ],
+      "print_order": 6,
+      "sequence": 6,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 820,
+    "price_delivery": 890,
+    "price_takeaway": 840,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_nuts",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "names": [
+      {
+        "name": "Μείγμα ξηρών καρπών",
+        "locale": "gr"
+      },
+      {
+        "name": "Mixed nuts",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μείγμα ξηρών καρπών",
+    "description_en": "Mixed nuts",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_snack",
+      "business_id": "shop_tourist",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 300,
+    "price_delivery": 340,
+    "price_takeaway": 310,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_granola_bar",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "names": [
+      {
+        "name": "Μπάρα δημητριακών",
+        "locale": "gr"
+      },
+      {
+        "name": "Granola bar",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μπάρα δημητριακών",
+    "description_en": "Granola bar",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_snack",
+      "business_id": "shop_tourist",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks",
+      "internal_name": "snacks",
+      "names": [
+        {
+          "name": "Σνακ",
+          "locale": "gr"
+        },
+        {
+          "name": "Snacks",
+          "locale": "en"
+        }
+      ],
+      "print_order": 7,
+      "sequence": 7,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 250,
+    "price_delivery": 280,
+    "price_takeaway": 260,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_cheesecake",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "names": [
+      {
+        "name": "Τσίζκεϊκ",
+        "locale": "gr"
+      },
+      {
+        "name": "Cheesecake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Τσίζκεϊκ",
+    "description_en": "Cheesecake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "business_id": "shop_tourist",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 520,
+    "price_delivery": 570,
+    "price_takeaway": 540,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_chocolate_cake",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "names": [
+      {
+        "name": "Σοκολατόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Chocolate cake",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Σοκολατόπιτα",
+    "description_en": "Chocolate cake",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "business_id": "shop_tourist",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 500,
+    "price_delivery": 550,
+    "price_takeaway": 520,
+    "vat_rate": 24,
+    "vat_rate_delivery": 24,
+    "vat_rate_takeaway": 24,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_apple_pie",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "names": [
+      {
+        "name": "Μηλόπιτα",
+        "locale": "gr"
+      },
+      {
+        "name": "Apple pie",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Μηλόπιτα",
+    "description_en": "Apple pie",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "business_id": "shop_tourist",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 450,
+    "price_delivery": 500,
+    "price_takeaway": 470,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  },
+  {
+    "id": "shop_tourist_prod_ice_cream",
+    "business_id": "shop_tourist",
+    "barcode_id": "",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "names": [
+      {
+        "name": "Παγωτό δύο μπάλες",
+        "locale": "gr"
+      },
+      {
+        "name": "Two-scoop ice cream",
+        "locale": "en"
+      }
+    ],
+    "description_gr": "Παγωτό δύο μπάλες",
+    "description_en": "Two-scoop ice cream",
+    "visibility": {
+      "menu": true
+    },
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "business_id": "shop_tourist",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts",
+      "internal_name": "desserts",
+      "names": [
+        {
+          "name": "Γλυκά",
+          "locale": "gr"
+        },
+        {
+          "name": "Desserts",
+          "locale": "en"
+        }
+      ],
+      "print_order": 8,
+      "sequence": 8,
+      "product_sequence": null,
+      "order_types": [
+        "dine_in",
+        "delivery",
+        "takeaway"
+      ],
+      "created_at": "2026-01-01T00:00:00.000+02:00",
+      "updated_at": "2026-01-01T00:00:00.000+02:00"
+    },
+    "price_store": 480,
+    "price_delivery": 530,
+    "price_takeaway": 500,
+    "vat_rate": 13,
+    "vat_rate_delivery": 13,
+    "vat_rate_takeaway": 13,
+    "taxes": [],
+    "my_data_classification": {},
+    "published": true,
+    "available": true,
+    "order_types": [
+      "dine_in",
+      "delivery",
+      "takeaway"
+    ],
+    "quantity_total": 1000,
+    "quantity_portion": 1,
+    "quantity_type": "pieces",
+    "quantity_notify": 20,
+    "enable_measurement": false,
+    "optional_ingredients": false,
+    "ingredients_ticket_show_selected": false,
+    "created_at": "2026-01-01T00:00:00.000+02:00",
+    "updated_at": "2026-01-01T00:00:00.000+02:00"
+  }
+]

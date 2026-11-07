@@ -1,0 +1,350 @@
+dobby Challenge — Format δεδομένων
+ΣΥΝΟΛΟ ΔΕΔΟΜΕΝΩΝ: ΠΑΡΑΓΓΕΛΙΕΣ (orders)
+=====================================================================
+
+ΤΙ ΠΕΡΙΕΧΕΙ
+-----------
+Κάθε εγγραφή είναι μία παραγγελία ενός καταστήματος. Περιέχει:
+  - γενικά στοιχεία (τύπος, κατάσταση, χρόνοι),
+  - το τραπέζι ή τον πελάτη/διανομέα (ανάλογα με τον τύπο),
+  - τις γραμμές παραγγελίας (items): ποια προϊόντα, με ποιες επιλογές,
+    extras, εκπτώσεις και πληρωμές,
+  - τη συνολική ανάλυση τιμής και ΦΠΑ.
+
+Η απόκριση μπορεί να είναι μία παραγγελία (αντικείμενο {...}) ή λίστα
+παραγγελιών (πίνακας [ {...}, {...} ]).
+
+ΓΕΝΙΚΟΙ ΚΑΝΟΝΕΣ
+---------------
+  - Όλα τα ποσά είναι ακέραιοι σε ΛΕΠΤΑ του ευρώ (π.χ. 380 = 3,80 €).
+  - Οι ημερομηνίες είναι σε μορφή ISO 8601 (π.χ. 2026-01-15T14:30:00.000Z).
+  - Κάποια πεδία εμφανίζονται μόνο σε ορισμένους τύπους παραγγελίας
+    (βλ. «Προαιρετικά πεδία»). Ο κώδικάς σας πρέπει να χειρίζεται
+    πεδία που λείπουν ή είναι κενά/null.
+  - Τα αναγνωριστικά (id) είναι κείμενα και ξεκινούν με το
+    αναγνωριστικό του καταστήματος (business_id).
+
+
+ΔΟΜΗ
+====
+
+{
+  "id": "<string>",
+  "daily_id": "<string>",
+  "short_id": "<string>",
+  "business_id": "<string>",
+  "type": "<string>",
+  "status": "<string>",
+
+  "table": {                                   // μόνο σε dine_in
+    "id": "<string>",
+    "name": "<string>",
+    "position": { "id": "<string>", "name": "<string>" },
+    "party_size": <integer>
+  },
+
+  "customer": {                                // κυρίως σε delivery
+    "id": "<string>",
+    "name": "<string>",
+    "phone_id": "<string>",
+    "phone": "<string>",
+    "address_id": "<string>",
+    "street_name": "<string>",
+    "street_number": "<string>",
+    "area": "<string>",
+    "zip_code": "<string>",
+    "floor": "<string>",
+    "doorbell": "<string>"
+  },
+
+  "fulfillment": {
+    "status": "<string>",
+    "preparing_at": "<datetime>",
+    "picked_up_at": "<datetime>"
+  },
+
+  "items": [
+    {
+      "id": "<string>",
+      "product_id": "<string>",
+      "name_gr": "<string>",
+      "name_en": "<string>",
+      "internal_name": "<string>",
+      "avatar": "<url>",                       // προαιρετικό
+      "category": {
+        "id": "<string>",
+        "internal_name": "<string>",
+        "name_gr": "<string>",
+        "name_en": "<string>"
+      },
+      "price": <integer>,
+      "price_with_extras": <integer>,
+      "price_base": <integer>,
+      "vat_rate": <integer>,
+      "quantity": <integer>,
+      "added_at": "<datetime>",
+
+      "selections": [                          // προαιρετικό
+        {
+          "id": "<string>",
+          "name_gr": "<string>",
+          "name_en": "<string>",
+          "required": <boolean>,
+          "option": { "id": "<string>", "name_gr": "<string>", "name_en": "<string>" },
+          "price": <integer>
+        }
+      ],
+      "extras": [                              // προαιρετικό
+        { "id": "<string>", "name_gr": "<string>", "name_en": "<string>", "price": <integer> }
+      ],
+      "ingredients": [                         // προαιρετικό
+        { "id": "<string>", "name_gr": "<string>", "name_en": "<string>" }
+      ],
+      "taxes": [                               // προαιρετικό
+        {
+          "id": "<string>",
+          "type": <integer>,
+          "category": <integer>,
+          "description": "<string>",
+          "amount_type": "<string>",
+          "amount": <integer>,
+          "vat_rate": <integer>
+        }
+      ],
+
+      "net_price": <integer>,
+      "total_vat": <integer>,
+      "total_discount": <integer>,
+      "total_amount": <integer>,
+      "discounts": [
+        {
+          "type": "<string>",
+          "amount": <integer>,
+          "total_amount": <integer>,
+          "assignee": { "id": "<string>", "first_name": "<string>", "last_name": "<string>", "role": "<string>" }
+        }
+      ],
+      "payment": [                             // ή null αν δεν έχει πληρωθεί
+        {
+          "type": "<string>",
+          "recipient": { "id": "<string>", "first_name": "<string>", "last_name": "<string>", "role": "<string>" },
+          "paid_at": "<datetime>",
+          "amount": <integer>
+        }
+      ],
+
+      "quantity_printed": <integer>,
+      "quantity_forms_printed": <integer>,
+      "quantity_invoiced": <integer>,
+      "my_data_classification": { "category": "<string>", "type": "<string>" },
+      "invoice_classifications": [
+        {
+          "invoice_type": "<string>",
+          "classification": { "category": "<string>", "type": "<string>" }
+        }
+      ],
+      "source": { "menu_id": "<string>", "menu_name": "<string>" }   // προαιρετικό
+    }
+  ],
+
+  "initiator": { "id": "<string>", "first_name": "<string>", "last_name": "<string>", "role": "<string>" },
+  "assignee":  { "id": "<string>", "first_name": "<string>", "last_name": "<string>", "role": "<string>" },
+  "courier": {                                 // μόνο σε delivery
+    "id": "<string>",
+    "first_name": "<string>",
+    "last_name": "<string>",
+    "role": "<string>",
+    "assigned_at": "<datetime>"
+  },
+
+  "price_analysis": {
+    "total_vat": {
+      "category_a": { "net_amount": <integer>, "vat_amount": <integer> },
+      "category_b": { "net_amount": <integer>, "vat_amount": <integer> },
+      "category_c": { "net_amount": <integer>, "vat_amount": <integer> },
+      "category_d": { "net_amount": <integer>, "vat_amount": <integer> },
+      "category_e": { "net_amount": <integer>, "vat_amount": <integer> },
+      "sum":        { "net_amount": <integer>, "vat_amount": <integer> }
+    },
+    "total_products": <integer>,
+    "total_amount_before_discount": <integer>,
+    "total_discount": <integer>,
+    "total_amount": <integer>,
+    "total_paid": <integer>,
+    "total_remaining": <integer>
+  },
+
+  "provider": { "name": "<string>" },          // κενό {} αν η παραγγελία δεν ήρθε από πλατφόρμα
+  "created_at": "<datetime>",
+  "updated_at": "<datetime>"
+}
+
+
+ΠΕΡΙΓΡΑΦΗ ΠΕΔΙΩΝ
+================
+
+1. Γενικά στοιχεία παραγγελίας
+------------------------------
+id               Μοναδικό αναγνωριστικό της παραγγελίας.
+daily_id         Αύξων αριθμός της παραγγελίας μέσα στην ημέρα.
+short_id         Σύντομος κωδικός παραγγελίας για εμφάνιση.
+business_id      Αναγνωριστικό του καταστήματος.
+type             Τύπος παραγγελίας: dine_in (κατανάλωση στο κατάστημα),
+                 delivery, takeaway.
+status           Κατάσταση της παραγγελίας, π.χ. active (ανοιχτή),
+                 dispatched (έχει φύγει για παράδοση), completed (ολοκληρώθηκε).
+created_at       Πότε δημιουργήθηκε η παραγγελία.
+updated_at       Πότε ενημερώθηκε τελευταία φορά.
+
+2. Τραπέζι — table (μόνο σε dine_in)
+------------------------------------
+table.id, table.name       Αναγνωριστικό και όνομα/αριθμός τραπεζιού.
+table.position.id/.name    Χώρος του καταστήματος όπου βρίσκεται το
+                           τραπέζι (π.χ. «Bar», «Βεράντα»).
+table.party_size           Αριθμός ατόμων στο τραπέζι.
+
+3. Πελάτης — customer (κυρίως σε delivery)
+------------------------------------------
+customer.id                Αναγνωριστικό πελάτη. Κενό όταν η παραγγελία
+                           δεν συνδέεται με καταχωρημένο πελάτη.
+customer.name              Όνομα πελάτη.
+customer.phone_id, .phone  Αναγνωριστικό και αριθμός τηλεφώνου.
+customer.address_id        Αναγνωριστικό της αποθηκευμένης διεύθυνσης.
+customer.street_name,
+  .street_number, .area,
+  .zip_code                Οδός, αριθμός, περιοχή, ταχυδρομικός κώδικας.
+customer.floor, .doorbell  Όροφος και όνομα στο κουδούνι.
+
+4. Εκτέλεση — fulfillment
+-------------------------
+fulfillment.status         Στάδιο προετοιμασίας/παράδοσης, π.χ. preparing,
+                           picked_up.
+fulfillment.preparing_at   Πότε ξεκίνησε η προετοιμασία.
+fulfillment.picked_up_at   Πότε παραλήφθηκε η παραγγελία.
+
+5. Γραμμές παραγγελίας — items[]
+--------------------------------
+Μία εγγραφή για κάθε προϊόν που προστέθηκε στην παραγγελία.
+
+id                   Αναγνωριστικό της γραμμής.
+product_id           Αναγνωριστικό του προϊόντος (= id στον κατάλογο προϊόντων).
+name_gr, name_en,
+  internal_name      Όνομα προϊόντος στα ελληνικά, στα αγγλικά και εσωτερικό
+                     όνομα.
+avatar               URL εικόνας του προϊόντος (προαιρετικό).
+category             Κατηγορία του προϊόντος (id και ονόματα), π.χ. «Καφές».
+price                Βασική τιμή μονάδας.
+price_with_extras    Τιμή μονάδας μαζί με τα extras.
+price_base           Βασική τιμή αναφοράς του προϊόντος (μπορεί να είναι 0).
+vat_rate             Συντελεστής ΦΠΑ σε %, π.χ. 13 ή 24.
+quantity             Ποσότητα (τεμάχια).
+added_at             Πότε προστέθηκε το προϊόν στην παραγγελία.
+
+selections[]         Επιλογές του προϊόντος, π.χ. «Ζάχαρη».
+  .name_gr/.name_en  Όνομα της επιλογής.
+  .required          Αν η επιλογή είναι υποχρεωτική.
+  .option            Η τιμή που επιλέχθηκε (id, ονόματα), π.χ. «Μέτριος».
+  .price             Επιπλέον χρέωση της επιλογής (συνήθως 0).
+
+extras[]             Πρόσθετα με χρέωση, π.χ. «Κανέλα».
+  .name_gr/.name_en  Όνομα του extra.
+  .price             Χρέωση του extra ανά τεμάχιο.
+
+ingredients[]        Υλικά του προϊόντος (id και ονόματα), π.χ. «Μανιτάρια».
+
+taxes[]              Πρόσθετες χρεώσεις/τέλη στη γραμμή, π.χ. «Καπάκι».
+  .description       Περιγραφή της χρέωσης.
+  .amount_type       Τρόπος υπολογισμού, π.χ. fixed (σταθερό ποσό).
+  .amount            Ποσό της χρέωσης ανά τεμάχιο.
+  .vat_rate          ΦΠΑ (%) της χρέωσης.
+  .type, .category   Αριθμητικοί κωδικοί ταξινόμησης της χρέωσης.
+
+net_price            Καθαρή αξία ανά τεμάχιο (χωρίς ΦΠΑ).
+total_vat            ΦΠΑ ανά τεμάχιο.
+total_discount       Έκπτωση ανά τεμάχιο.
+total_amount         Τελικό ποσό ανά τεμάχιο (με extras, χρεώσεις, ΦΠΑ και
+                     μετά την έκπτωση).
+
+discounts[]          Εκπτώσεις που εφαρμόστηκαν στη γραμμή.
+  .type              Είδος έκπτωσης, π.χ. self_consumption (ιδιοκατανάλωση).
+  .amount            Μέγεθος της έκπτωσης (π.χ. 50 = 50%).
+  .total_amount      Η αξία πάνω στην οποία εφαρμόστηκε η έκπτωση.
+  .assignee          Ο χρήστης που έδωσε την έκπτωση.
+
+payment[]            Πληρωμές της γραμμής, ή null αν δεν έχει πληρωθεί.
+                     Καταγράφεται μία πληρωμή ανά τεμάχιο.
+  .type              Τρόπος πληρωμής, π.χ. cash (μετρητά), card (κάρτα).
+  .recipient         Ο χρήστης που εισέπραξε (id, όνομα, ρόλος).
+  .paid_at           Πότε έγινε η πληρωμή.
+  .amount            Ποσό της πληρωμής.
+
+quantity_printed         Ποσότητα που στάλθηκε για εκτύπωση στην παραγωγή
+                         (κουζίνα/bar).
+quantity_forms_printed   Ποσότητα που τυπώθηκε σε έντυπα/δελτία.
+quantity_invoiced        Ποσότητα που έχει τιμολογηθεί.
+my_data_classification   Χαρακτηρισμός εσόδου για το myDATA της ΑΑΔΕ
+                         (category, type), π.χ. category1_1 / E3_561_003.
+invoice_classifications[] Χαρακτηρισμός ανά τύπο παραστατικού: invoice_type
+                         (κωδικός παραστατικού, π.χ. 11.1) και classification.
+source                   Από ποιον κατάλογο (menu) προήλθε το προϊόν
+                         (menu_id, menu_name), π.χ. «Βασικός κατάλογος»,
+                         «Brunch». Προαιρετικό.
+
+6. Προσωπικό
+------------
+initiator        Ο χρήστης που άνοιξε την παραγγελία.
+assignee         Ο χρήστης που έχει αναλάβει την παραγγελία.
+courier          Ο διανομέας (μόνο σε delivery), με assigned_at = πότε του
+                 ανατέθηκε.
+role             Ρόλος του χρήστη, π.χ. owner, delivery.
+
+7. Ανάλυση τιμής — price_analysis
+---------------------------------
+total_vat.category_a ... category_e
+                 Καθαρή αξία (net_amount) και ΦΠΑ (vat_amount) ανά κατηγορία
+                 συντελεστή ΦΠΑ (π.χ. category_b = 13%, category_c = 24%).
+total_vat.sum    Σύνολο καθαρής αξίας και ΦΠΑ.
+total_products   Πλήθος τεμαχίων στην παραγγελία.
+total_amount_before_discount   Σύνολο πριν τις εκπτώσεις.
+total_discount   Συνολική έκπτωση.
+total_amount     Τελικό σύνολο της παραγγελίας.
+total_paid       Ποσό που έχει πληρωθεί.
+total_remaining  Ποσό που απομένει να πληρωθεί.
+
+8. Άλλα
+-------
+provider.name    Η πλατφόρμα από την οποία ήρθε η παραγγελία, π.χ. efood.
+                 Κενό {} όταν η παραγγελία έγινε απευθείας στο κατάστημα.
+
+
+ΧΡΗΣΙΜΕΣ ΣΗΜΕΙΩΣΕΙΣ
+===================
+1. Τα ποσά των γραμμών είναι ΑΝΑ ΤΕΜΑΧΙΟ.
+   Σύνολο γραμμής = items[].total_amount × items[].quantity.
+   Το άθροισμα όλων των γραμμών δίνει το price_analysis.total_amount.
+
+2. Πώς χτίζεται η τιμή μιας γραμμής (ανά τεμάχιο):
+   price + extras            = price_with_extras
+   + πρόσθετες χρεώσεις (taxes)
+   − έκπτωση (total_discount)
+   = total_amount
+   Παράδειγμα: 1,80 € + 0,30 € κανέλα + 0,05 € καπάκι = 2,15 €.
+
+3. Το ίδιο προϊόν έχει διαφορετική τιμή και ΦΠΑ ανά τύπο παραγγελίας
+   (dine_in / delivery / takeaway). Βλ. τον κατάλογο προϊόντων.
+
+4. Κανάλι παραγγελίας: συνδυάστε το type με το provider.name για να
+   ξεχωρίσετε π.χ. παραγγελίες στο κατάστημα, delivery του καταστήματος
+   και παραγγελίες από πλατφόρμες.
+
+5. selections και extras δείχνουν τι προσθέτουν οι πελάτες σε ένα
+   προϊόν — χρήσιμο για upsell.
+
+6. Οι παραγγελίες συνήθως δεν συνδέονται με ταυτότητα πελάτη. Οι
+   προτάσεις πρέπει να βασίζονται στο περιεχόμενο του καλαθιού και στο
+   context (ώρα, κανάλι, κατάστημα).
+
+7. Σύνδεση με άλλα σύνολα:
+   items[].product_id   →  id στον Κατάλογο προϊόντων
+   items[].category.id  →  category.id στον Κατάλογο προϊόντων
+   items[].source.menu_id → menu_id στα Στατιστικά πωλήσεων

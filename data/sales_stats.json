@@ -1,0 +1,2420 @@
+[
+  {
+    "id": "shop_university_prod_freddo_espresso",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 350,
+    "quantity": 404,
+    "total_amount": 145630,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 404,
+        "total_amount": 145630
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_freddo_cappuccino",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 400,
+    "quantity": 378,
+    "total_amount": 154650,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 378,
+        "total_amount": 154650
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_espresso",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 250,
+    "quantity": 221,
+    "total_amount": 57670,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 221,
+        "total_amount": 57670
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_filter_coffee",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 300,
+    "quantity": 232,
+    "total_amount": 72000,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 232,
+        "total_amount": 72000
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_iced_latte",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "category": {
+      "id": "shop_university_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 430,
+    "quantity": 265,
+    "total_amount": 116750,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 265,
+        "total_amount": 116750
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_hot_chocolate",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "category": {
+      "id": "shop_university_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 420,
+    "quantity": 161,
+    "total_amount": 69020,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 161,
+        "total_amount": 69020
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_tea",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "category": {
+      "id": "shop_university_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 300,
+    "quantity": 130,
+    "total_amount": 40170,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 130,
+        "total_amount": 40170
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_fresh_orange",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 450,
+    "quantity": 181,
+    "total_amount": 83200,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 181,
+        "total_amount": 83200
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_lemonade",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 400,
+    "quantity": 147,
+    "total_amount": 60490,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 147,
+        "total_amount": 60490
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_soft_drink",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 250,
+    "quantity": 195,
+    "total_amount": 51050,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 195,
+        "total_amount": 51050
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_sparkling_water",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 180,
+    "quantity": 123,
+    "total_amount": 23380,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 123,
+        "total_amount": 23380
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_water",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "category": {
+      "id": "shop_university_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 100,
+    "quantity": 250,
+    "total_amount": 27070,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 250,
+        "total_amount": 27070
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_koulouri",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 120,
+    "quantity": 286,
+    "total_amount": 36790,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 286,
+        "total_amount": 36790
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_croissant",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 230,
+    "quantity": 205,
+    "total_amount": 49280,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 205,
+        "total_amount": 49280
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_spinach_pie",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 320,
+    "quantity": 172,
+    "total_amount": 57040,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 172,
+        "total_amount": 57040
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_yogurt_honey",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "category": {
+      "id": "shop_university_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 420,
+    "quantity": 107,
+    "total_amount": 46090,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 107,
+        "total_amount": 46090
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_club_sandwich",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 850,
+    "quantity": 284,
+    "total_amount": 249120,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 284,
+        "total_amount": 249120
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_chicken_wrap",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 780,
+    "quantity": 259,
+    "total_amount": 207230,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 259,
+        "total_amount": 207230
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_tuna_baguette",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 720,
+    "quantity": 157,
+    "total_amount": 116860,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 157,
+        "total_amount": 116860
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_veggie_toast",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "category": {
+      "id": "shop_university_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 560,
+    "quantity": 151,
+    "total_amount": 87860,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 151,
+        "total_amount": 87860
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_beef_burger",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "category": {
+      "id": "shop_university_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 980,
+    "quantity": 236,
+    "total_amount": 240280,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 236,
+        "total_amount": 240280
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_chicken_burger",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "category": {
+      "id": "shop_university_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 900,
+    "quantity": 166,
+    "total_amount": 155140,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 166,
+        "total_amount": 155140
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_fries",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "category": {
+      "id": "shop_university_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 350,
+    "quantity": 283,
+    "total_amount": 102120,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 283,
+        "total_amount": 102120
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_greek_salad",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "category": {
+      "id": "shop_university_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 780,
+    "quantity": 148,
+    "total_amount": 118850,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 148,
+        "total_amount": 118850
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_caesar_salad",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "category": {
+      "id": "shop_university_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 820,
+    "quantity": 110,
+    "total_amount": 91780,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 110,
+        "total_amount": 91780
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_nuts",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "category": {
+      "id": "shop_university_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 300,
+    "quantity": 105,
+    "total_amount": 32710,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 105,
+        "total_amount": 32710
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_granola_bar",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "category": {
+      "id": "shop_university_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 250,
+    "quantity": 103,
+    "total_amount": 26770,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 103,
+        "total_amount": 26770
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_cheesecake",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 520,
+    "quantity": 205,
+    "total_amount": 110390,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 205,
+        "total_amount": 110390
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_chocolate_cake",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 500,
+    "quantity": 165,
+    "total_amount": 85270,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 165,
+        "total_amount": 85270
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_apple_pie",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 450,
+    "quantity": 136,
+    "total_amount": 63810,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 136,
+        "total_amount": 63810
+      }
+    ]
+  },
+  {
+    "id": "shop_university_prod_ice_cream",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "category": {
+      "id": "shop_university_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 480,
+    "quantity": 192,
+    "total_amount": 95740,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_university_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 192,
+        "total_amount": 95740
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_freddo_espresso",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 350,
+    "quantity": 400,
+    "total_amount": 144460,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 400,
+        "total_amount": 144460
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_freddo_cappuccino",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 400,
+    "quantity": 327,
+    "total_amount": 133970,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 327,
+        "total_amount": 133970
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_espresso",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 250,
+    "quantity": 203,
+    "total_amount": 52820,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 203,
+        "total_amount": 52820
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_filter_coffee",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 300,
+    "quantity": 196,
+    "total_amount": 60990,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 196,
+        "total_amount": 60990
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_iced_latte",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "category": {
+      "id": "shop_commercial_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 430,
+    "quantity": 220,
+    "total_amount": 96910,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 220,
+        "total_amount": 96910
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_hot_chocolate",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "category": {
+      "id": "shop_commercial_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 420,
+    "quantity": 151,
+    "total_amount": 64850,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 151,
+        "total_amount": 64850
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_tea",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "category": {
+      "id": "shop_commercial_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 300,
+    "quantity": 114,
+    "total_amount": 35320,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 114,
+        "total_amount": 35320
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_fresh_orange",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 450,
+    "quantity": 174,
+    "total_amount": 80640,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 174,
+        "total_amount": 80640
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_lemonade",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 400,
+    "quantity": 145,
+    "total_amount": 59780,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 145,
+        "total_amount": 59780
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_soft_drink",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 250,
+    "quantity": 160,
+    "total_amount": 42420,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 160,
+        "total_amount": 42420
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_sparkling_water",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 180,
+    "quantity": 113,
+    "total_amount": 21470,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 113,
+        "total_amount": 21470
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_water",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "category": {
+      "id": "shop_commercial_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 100,
+    "quantity": 217,
+    "total_amount": 23470,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 217,
+        "total_amount": 23470
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_koulouri",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 120,
+    "quantity": 269,
+    "total_amount": 34450,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 269,
+        "total_amount": 34450
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_croissant",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 230,
+    "quantity": 211,
+    "total_amount": 50850,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 211,
+        "total_amount": 50850
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_spinach_pie",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 320,
+    "quantity": 142,
+    "total_amount": 47250,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 142,
+        "total_amount": 47250
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_yogurt_honey",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "category": {
+      "id": "shop_commercial_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 420,
+    "quantity": 112,
+    "total_amount": 48670,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 112,
+        "total_amount": 48670
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_club_sandwich",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 850,
+    "quantity": 239,
+    "total_amount": 209090,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 239,
+        "total_amount": 209090
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_chicken_wrap",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 780,
+    "quantity": 239,
+    "total_amount": 191970,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 239,
+        "total_amount": 191970
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_tuna_baguette",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 720,
+    "quantity": 148,
+    "total_amount": 109890,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 148,
+        "total_amount": 109890
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_veggie_toast",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "category": {
+      "id": "shop_commercial_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 560,
+    "quantity": 122,
+    "total_amount": 71060,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 122,
+        "total_amount": 71060
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_beef_burger",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 980,
+    "quantity": 216,
+    "total_amount": 220320,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 216,
+        "total_amount": 220320
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_chicken_burger",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 900,
+    "quantity": 163,
+    "total_amount": 152720,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 163,
+        "total_amount": 152720
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_fries",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 350,
+    "quantity": 235,
+    "total_amount": 85430,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 235,
+        "total_amount": 85430
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_greek_salad",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 780,
+    "quantity": 104,
+    "total_amount": 83360,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 104,
+        "total_amount": 83360
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_caesar_salad",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "category": {
+      "id": "shop_commercial_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 820,
+    "quantity": 104,
+    "total_amount": 87920,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 104,
+        "total_amount": 87920
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_nuts",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "category": {
+      "id": "shop_commercial_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 300,
+    "quantity": 89,
+    "total_amount": 27850,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 89,
+        "total_amount": 27850
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_granola_bar",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "category": {
+      "id": "shop_commercial_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 250,
+    "quantity": 113,
+    "total_amount": 29270,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 113,
+        "total_amount": 29270
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_cheesecake",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 520,
+    "quantity": 168,
+    "total_amount": 90310,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 168,
+        "total_amount": 90310
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_chocolate_cake",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 500,
+    "quantity": 155,
+    "total_amount": 80070,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 155,
+        "total_amount": 80070
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_apple_pie",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 450,
+    "quantity": 106,
+    "total_amount": 49840,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 106,
+        "total_amount": 49840
+      }
+    ]
+  },
+  {
+    "id": "shop_commercial_prod_ice_cream",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "category": {
+      "id": "shop_commercial_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 480,
+    "quantity": 177,
+    "total_amount": 88140,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_commercial_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 177,
+        "total_amount": 88140
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_freddo_espresso",
+    "name_gr": "Freddo espresso",
+    "name_en": "Freddo espresso",
+    "internal_name": "freddo espresso",
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 350,
+    "quantity": 398,
+    "total_amount": 143580,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 398,
+        "total_amount": 143580
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_freddo_cappuccino",
+    "name_gr": "Freddo cappuccino",
+    "name_en": "Freddo cappuccino",
+    "internal_name": "freddo cappuccino",
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 400,
+    "quantity": 367,
+    "total_amount": 150580,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 367,
+        "total_amount": 150580
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_espresso",
+    "name_gr": "Εσπρέσο",
+    "name_en": "Espresso",
+    "internal_name": "espresso",
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 250,
+    "quantity": 234,
+    "total_amount": 61190,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 234,
+        "total_amount": 61190
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_filter_coffee",
+    "name_gr": "Καφές φίλτρου",
+    "name_en": "Filter coffee",
+    "internal_name": "filter coffee",
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 300,
+    "quantity": 245,
+    "total_amount": 76100,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 245,
+        "total_amount": 76100
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_iced_latte",
+    "name_gr": "Κρύο latte",
+    "name_en": "Iced latte",
+    "internal_name": "iced latte",
+    "category": {
+      "id": "shop_tourist_cat_coffee",
+      "internal_name": "coffee",
+      "name_gr": "Καφές",
+      "name_en": "Coffee"
+    },
+    "price": 430,
+    "quantity": 275,
+    "total_amount": 121370,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 275,
+        "total_amount": 121370
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_hot_chocolate",
+    "name_gr": "Ζεστή σοκολάτα",
+    "name_en": "Hot chocolate",
+    "internal_name": "hot chocolate",
+    "category": {
+      "id": "shop_tourist_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 420,
+    "quantity": 162,
+    "total_amount": 69800,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 162,
+        "total_amount": 69800
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_tea",
+    "name_gr": "Τσάι βουνού",
+    "name_en": "Mountain tea",
+    "internal_name": "mountain tea",
+    "category": {
+      "id": "shop_tourist_cat_hot_beverage",
+      "internal_name": "hot beverages",
+      "name_gr": "Ζεστά ροφήματα",
+      "name_en": "Hot beverages"
+    },
+    "price": 300,
+    "quantity": 138,
+    "total_amount": 42320,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 138,
+        "total_amount": 42320
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_fresh_orange",
+    "name_gr": "Φυσικός χυμός πορτοκάλι",
+    "name_en": "Fresh orange juice",
+    "internal_name": "fresh orange juice",
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 450,
+    "quantity": 205,
+    "total_amount": 94910,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 205,
+        "total_amount": 94910
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_lemonade",
+    "name_gr": "Σπιτική λεμονάδα",
+    "name_en": "Homemade lemonade",
+    "internal_name": "homemade lemonade",
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 400,
+    "quantity": 165,
+    "total_amount": 68150,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 165,
+        "total_amount": 68150
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_soft_drink",
+    "name_gr": "Αναψυκτικό 330ml",
+    "name_en": "Soft drink 330ml",
+    "internal_name": "soft drink 330ml",
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 250,
+    "quantity": 200,
+    "total_amount": 52450,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 200,
+        "total_amount": 52450
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_sparkling_water",
+    "name_gr": "Ανθρακούχο νερό",
+    "name_en": "Sparkling water",
+    "internal_name": "sparkling water",
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 180,
+    "quantity": 126,
+    "total_amount": 24210,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 126,
+        "total_amount": 24210
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_water",
+    "name_gr": "Νερό 500ml",
+    "name_en": "Water 500ml",
+    "internal_name": "water 500ml",
+    "category": {
+      "id": "shop_tourist_cat_cold_beverage",
+      "internal_name": "cold beverages",
+      "name_gr": "Κρύα ροφήματα",
+      "name_en": "Cold beverages"
+    },
+    "price": 100,
+    "quantity": 309,
+    "total_amount": 33310,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 309,
+        "total_amount": 33310
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_koulouri",
+    "name_gr": "Κουλούρι ολικής",
+    "name_en": "Whole wheat koulouri",
+    "internal_name": "whole wheat koulouri",
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 120,
+    "quantity": 294,
+    "total_amount": 37400,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 294,
+        "total_amount": 37400
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_croissant",
+    "name_gr": "Κρουασάν βουτύρου",
+    "name_en": "Butter croissant",
+    "internal_name": "butter croissant",
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 230,
+    "quantity": 242,
+    "total_amount": 58330,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 242,
+        "total_amount": 58330
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_spinach_pie",
+    "name_gr": "Σπανακόπιτα",
+    "name_en": "Spinach pie",
+    "internal_name": "spinach pie",
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 320,
+    "quantity": 165,
+    "total_amount": 54820,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 165,
+        "total_amount": 54820
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_yogurt_honey",
+    "name_gr": "Γιαούρτι με μέλι",
+    "name_en": "Greek yogurt with honey",
+    "internal_name": "greek yogurt with honey",
+    "category": {
+      "id": "shop_tourist_cat_breakfast",
+      "internal_name": "breakfast",
+      "name_gr": "Πρωινό",
+      "name_en": "Breakfast"
+    },
+    "price": 420,
+    "quantity": 137,
+    "total_amount": 59350,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 137,
+        "total_amount": 59350
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_club_sandwich",
+    "name_gr": "Κλαμπ σάντουιτς",
+    "name_en": "Club sandwich",
+    "internal_name": "club sandwich",
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 850,
+    "quantity": 296,
+    "total_amount": 259170,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 296,
+        "total_amount": 259170
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_chicken_wrap",
+    "name_gr": "Wrap κοτόπουλο",
+    "name_en": "Chicken wrap",
+    "internal_name": "chicken wrap",
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 780,
+    "quantity": 273,
+    "total_amount": 218660,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 273,
+        "total_amount": 218660
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_tuna_baguette",
+    "name_gr": "Μπαγκέτα με τόνο",
+    "name_en": "Tuna baguette",
+    "internal_name": "tuna baguette",
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 720,
+    "quantity": 182,
+    "total_amount": 134880,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 182,
+        "total_amount": 134880
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_veggie_toast",
+    "name_gr": "Τοστ λαχανικών",
+    "name_en": "Veggie toast",
+    "internal_name": "veggie toast",
+    "category": {
+      "id": "shop_tourist_cat_sandwich",
+      "internal_name": "sandwiches",
+      "name_gr": "Σάντουιτς",
+      "name_en": "Sandwiches"
+    },
+    "price": 560,
+    "quantity": 147,
+    "total_amount": 85560,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 147,
+        "total_amount": 85560
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_beef_burger",
+    "name_gr": "Burger μοσχαρίσιο",
+    "name_en": "Beef burger",
+    "internal_name": "beef burger",
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 980,
+    "quantity": 263,
+    "total_amount": 267240,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 263,
+        "total_amount": 267240
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_chicken_burger",
+    "name_gr": "Burger κοτόπουλο",
+    "name_en": "Chicken burger",
+    "internal_name": "chicken burger",
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 900,
+    "quantity": 181,
+    "total_amount": 169320,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 181,
+        "total_amount": 169320
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_fries",
+    "name_gr": "Πατάτες τηγανητές",
+    "name_en": "French fries",
+    "internal_name": "french fries",
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 350,
+    "quantity": 268,
+    "total_amount": 97390,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 268,
+        "total_amount": 97390
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_greek_salad",
+    "name_gr": "Χωριάτικη σαλάτα",
+    "name_en": "Greek salad",
+    "internal_name": "greek salad",
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 780,
+    "quantity": 142,
+    "total_amount": 114500,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 142,
+        "total_amount": 114500
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_caesar_salad",
+    "name_gr": "Σαλάτα Caesar",
+    "name_en": "Caesar salad",
+    "internal_name": "caesar salad",
+    "category": {
+      "id": "shop_tourist_cat_food",
+      "internal_name": "food",
+      "name_gr": "Φαγητό",
+      "name_en": "Food"
+    },
+    "price": 820,
+    "quantity": 137,
+    "total_amount": 115320,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 137,
+        "total_amount": 115320
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_nuts",
+    "name_gr": "Μείγμα ξηρών καρπών",
+    "name_en": "Mixed nuts",
+    "internal_name": "mixed nuts",
+    "category": {
+      "id": "shop_tourist_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 300,
+    "quantity": 116,
+    "total_amount": 36300,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 116,
+        "total_amount": 36300
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_granola_bar",
+    "name_gr": "Μπάρα δημητριακών",
+    "name_en": "Granola bar",
+    "internal_name": "granola bar",
+    "category": {
+      "id": "shop_tourist_cat_snack",
+      "internal_name": "snacks",
+      "name_gr": "Σνακ",
+      "name_en": "Snacks"
+    },
+    "price": 250,
+    "quantity": 130,
+    "total_amount": 33850,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 130,
+        "total_amount": 33850
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_cheesecake",
+    "name_gr": "Τσίζκεϊκ",
+    "name_en": "Cheesecake",
+    "internal_name": "cheesecake",
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 520,
+    "quantity": 200,
+    "total_amount": 107590,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 200,
+        "total_amount": 107590
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_chocolate_cake",
+    "name_gr": "Σοκολατόπιτα",
+    "name_en": "Chocolate cake",
+    "internal_name": "chocolate cake",
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 500,
+    "quantity": 193,
+    "total_amount": 100410,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 193,
+        "total_amount": 100410
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_apple_pie",
+    "name_gr": "Μηλόπιτα",
+    "name_en": "Apple pie",
+    "internal_name": "apple pie",
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 450,
+    "quantity": 118,
+    "total_amount": 55070,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 118,
+        "total_amount": 55070
+      }
+    ]
+  },
+  {
+    "id": "shop_tourist_prod_ice_cream",
+    "name_gr": "Παγωτό δύο μπάλες",
+    "name_en": "Two-scoop ice cream",
+    "internal_name": "two-scoop ice cream",
+    "category": {
+      "id": "shop_tourist_cat_dessert",
+      "internal_name": "desserts",
+      "name_gr": "Γλυκά",
+      "name_en": "Desserts"
+    },
+    "price": 480,
+    "quantity": 176,
+    "total_amount": 87970,
+    "discount_types": {},
+    "sources": [
+      {
+        "source": {
+          "menu_id": "shop_tourist_menu_main",
+          "menu_name": "Βασικός κατάλογος"
+        },
+        "quantity": 176,
+        "total_amount": 87970
+      }
+    ]
+  }
+]

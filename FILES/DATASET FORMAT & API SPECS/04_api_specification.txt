@@ -1,0 +1,340 @@
+dobby Challenge — Προδιαγραφή API
+=====================================================================
+
+ΣΚΟΠΟΣ
+------
+Το API είναι ο τρόπος με τον οποίο οι εφαρμογές του dobby (Waiter App,
+e-Menu, Kiosk, Hub App) θα χρησιμοποιούν τη λύση σας. Στο τέλος του
+challenge η ομάδα του dobby θα καλέσει ζωντανά τα endpoints σας.
+
+Υποχρεωτικά endpoints:
+  POST /recommendations   Έξυπνες προτάσεις για ένα καλάθι
+  GET  /forecast          Πρόβλεψη ζήτησης ανά προϊόν ή κατηγορία
+  GET  /metrics           Μετρικές των μοντέλων και εκτιμώμενο όφελος
+
+Προαιρετικό:
+  GET  /health            Έλεγχος ότι το API λειτουργεί
+
+
+ΓΕΝΙΚΟΙ ΚΑΝΟΝΕΣ
+===============
+  - Μορφή: REST, JSON (Content-Type: application/json), κωδικοποίηση UTF-8.
+  - Ποσά: ακέραιοι σε ΛΕΠΤΑ του ευρώ (όπως στα δεδομένα του dobby).
+  - Ημερομηνίες/ώρες: ISO 8601 (π.χ. 2026-01-15T14:30:00+02:00).
+    Μόνο ημερομηνία: YYYY-MM-DD.
+  - Αναγνωριστικά (business_id, product_id, category id): ίδια με τα
+    αναγνωριστικά των δεδομένων (βλ. αρχεία format).
+  - Τύποι παραγγελίας (order_type): dine_in, delivery, takeaway.
+  - Τεκμηρίωση: το API πρέπει να εκθέτει τεκμηρίωση OpenAPI
+    (π.χ. /docs, που δημιουργείται αυτόματα στο FastAPI).
+  - Εκτέλεση: το API πρέπει να ξεκινά με μία εντολή
+    (π.χ. docker compose up) και να ακούει σε http://localhost:8000.
+
+
+ΣΦΑΛΜΑΤΑ
+--------
+Σε κάθε σφάλμα, το API επιστρέφει τον κατάλληλο κωδικό HTTP και σώμα:
+
+{
+  "error": {
+    "code": "<string>",
+    "message": "<string>"
+  }
+}
+
+  400  invalid_request     Λείπει υποχρεωτικό πεδίο ή έχει λάθος μορφή.
+  404  not_found           Άγνωστο business_id, product_id ή κατηγορία.
+  422  unprocessable       Το αίτημα είναι έγκυρο, αλλά δεν μπορεί να
+                           εξυπηρετηθεί (π.χ. horizon εκτός ορίων).
+  500  internal_error      Απρόβλεπτο σφάλμα του συστήματος.
+
+
+=====================================================================
+1. POST /recommendations
+=====================================================================
+Επιστρέφει έως 3 προτάσεις προϊόντων για το τρέχον καλάθι, τη στιγμή
+που ο σερβιτόρος ή ο πελάτης προσθέτει προϊόντα.
+
+ΑΙΤΗΜΑ (σώμα JSON)
+------------------
+{
+  "business_id": "<string>",
+  "order_type": "<string>",
+  "channel": "<string>",
+  "timestamp": "<datetime>",
+  "cart": [
+    {
+      "product_id": "<string>",
+      "quantity": <integer>,
+      "selection_option_ids": ["<string>"],
+      "extra_ids": ["<string>"]
+    }
+  ],
+  "limit": <integer>
+}
+
+business_id            ΥΠΟΧΡΕΩΤΙΚΟ. Το κατάστημα.
+order_type             ΥΠΟΧΡΕΩΤΙΚΟ. dine_in, delivery ή takeaway.
+channel                Προαιρετικό. Από πού γίνεται η παραγγελία:
+                       waiter_app, e_menu ή kiosk.
+timestamp              ΥΠΟΧΡΕΩΤΙΚΟ. Η ώρα της παραγγελίας (για προτάσεις
+                       ανάλογα με την ώρα και την ημέρα).
+cart[]                 ΥΠΟΧΡΕΩΤΙΚΟ. Τα προϊόντα που υπάρχουν ήδη στο
+                       καλάθι (μπορεί να είναι κενό).
+  .product_id            Το προϊόν.
+  .quantity              Ποσότητα.
+  .selection_option_ids  Προαιρετικό. Οι επιλογές που έγιναν
+                         (selections[].option.id).
+  .extra_ids             Προαιρετικό. Τα extras που προστέθηκαν.
+limit                  Προαιρετικό. Πόσες προτάσεις να επιστραφούν
+                       (1–3, προεπιλογή 3).
+
+ΑΠΑΝΤΗΣΗ (200)
+--------------
+{
+  "recommendations": [
+    {
+      "product_id": "<string>",
+      "name": "<string>",
+      "category_id": "<string>",
+      "type": "<string>",
+      "replaces_product_id": "<string>",
+      "price": <integer>,
+      "score": <number>,
+      "reason": "<string>"
+    }
+  ],
+  "model_version": "<string>"
+}
+
+recommendations[]      Οι προτάσεις, ταξινομημένες από την καλύτερη
+                       (μπορεί να είναι κενή λίστα).
+  .product_id            Το προτεινόμενο προϊόν.
+  .name                  Όνομα για εμφάνιση.
+  .category_id           Η κατηγορία του προϊόντος.
+  .type                  upsell (αναβάθμιση προϊόντος του καλαθιού) ή
+                         cross_sell (συμπληρωματικό προϊόν).
+  .replaces_product_id   Μόνο για upsell: ποιο προϊόν του καλαθιού
+                         αναβαθμίζεται.
+  .price                 Τιμή του προϊόντος για το συγκεκριμένο order_type.
+  .score                 Βαθμός καταλληλότητας, από 0 έως 1.
+  .reason                Σύντομη αιτιολόγηση σε απλά ελληνικά, κατάλληλη
+                         για εμφάνιση, π.χ. «Το 42% όσων παίρνουν
+                         Freddo espresso παίρνουν και κουλούρι».
+model_version          Έκδοση του μοντέλου που έδωσε τις προτάσεις.
+
+ΚΑΝΟΝΕΣ
+-------
+  - Όχι προϊόν που υπάρχει ήδη στο καλάθι (εκτός από upsell).
+  - Μόνο προϊόντα διαθέσιμα (available / published) και που πωλούνται
+    στο συγκεκριμένο order_type.
+  - Η τιμή αντιστοιχεί στο order_type (price_store, price_delivery ή
+    price_takeaway του καταλόγου).
+  - Με κενό καλάθι, επιστρέψτε προτάσεις με βάση την ώρα και το κατάστημα.
+  - Χρόνος απόκρισης: στόχος κάτω από 200 ms.
+
+ΠΑΡΑΔΕΙΓΜΑ
+----------
+Αίτημα:
+{
+  "business_id": "shop_01",
+  "order_type": "dine_in",
+  "channel": "kiosk",
+  "timestamp": "2026-01-15T09:20:00+02:00",
+  "cart": [ { "product_id": "prod_freddo_espresso", "quantity": 1 } ],
+  "limit": 3
+}
+
+Απάντηση:
+{
+  "recommendations": [
+    {
+      "product_id": "prod_koulouri",
+      "name": "Κουλούρι ολικής",
+      "category_id": "cat_sfoliates",
+      "type": "cross_sell",
+      "price": 60,
+      "score": 0.81,
+      "reason": "Συχνά παραγγέλνεται μαζί με Freddo espresso το πρωί"
+    },
+    {
+      "product_id": "prod_freddo_cappuccino",
+      "name": "Freddo cappuccino",
+      "category_id": "cat_kafes",
+      "type": "upsell",
+      "replaces_product_id": "prod_freddo_espresso",
+      "price": 400,
+      "score": 0.54,
+      "reason": "Δημοφιλής αναβάθμιση του Freddo espresso"
+    }
+  ],
+  "model_version": "rec-v1.2"
+}
+
+
+=====================================================================
+2. GET /forecast
+=====================================================================
+Επιστρέφει πρόβλεψη πωλήσεων (τεμάχια) ανά ημέρα για ένα προϊόν ή μια
+κατηγορία ενός καταστήματος.
+
+ΠΑΡΑΜΕΤΡΟΙ (query string)
+-------------------------
+business_id     ΥΠΟΧΡΕΩΤΙΚΟ. Το κατάστημα.
+level           ΥΠΟΧΡΕΩΤΙΚΟ. product ή category.
+id              ΥΠΟΧΡΕΩΤΙΚΟ. Το product_id ή το category id.
+start_date      Προαιρετικό. Πρώτη ημέρα πρόβλεψης (YYYY-MM-DD).
+                Προεπιλογή: η επόμενη ημέρα.
+horizon         Προαιρετικό. Πλήθος ημερών (1–14, προεπιλογή 7).
+order_type      Προαιρετικό. dine_in, delivery ή takeaway.
+                Αν λείπει: σύνολο όλων των τύπων.
+
+Παράδειγμα:
+GET /forecast?business_id=shop_01&level=product&id=prod_freddo_espresso&horizon=7
+
+ΑΠΑΝΤΗΣΗ (200)
+--------------
+{
+  "business_id": "<string>",
+  "level": "<string>",
+  "id": "<string>",
+  "name": "<string>",
+  "order_type": "<string | null>",
+  "unit": "pieces",
+  "interval": <number>,
+  "forecast": [
+    {
+      "date": "<YYYY-MM-DD>",
+      "quantity": <number>,
+      "lower": <number>,
+      "upper": <number>
+    }
+  ],
+  "model_version": "<string>"
+}
+
+level, id, name      Τι προβλέπεται (προϊόν ή κατηγορία) και το όνομά του.
+order_type           Ο τύπος παραγγελίας, ή null για το σύνολο.
+unit                 Μονάδα: τεμάχια (pieces).
+interval             Το επίπεδο του διαστήματος αβεβαιότητας,
+                     π.χ. 0.8 = 80%.
+forecast[]           Μία εγγραφή ανά ημέρα.
+  .date                Η ημέρα.
+  .quantity            Αναμενόμενα τεμάχια.
+  .lower, .upper       Κάτω και άνω όριο του διαστήματος αβεβαιότητας.
+model_version        Έκδοση του μοντέλου πρόβλεψης.
+
+ΚΑΝΟΝΕΣ
+-------
+  - lower ≤ quantity ≤ upper, όλα ≥ 0.
+  - Για την ίδια ημέρα, η πρόβλεψη μιας κατηγορίας πρέπει να είναι
+    περίπου ίση με το άθροισμα των προβλέψεων των προϊόντων της.
+
+ΠΑΡΑΔΕΙΓΜΑ ΑΠΑΝΤΗΣΗΣ
+--------------------
+{
+  "business_id": "shop_01",
+  "level": "product",
+  "id": "prod_freddo_espresso",
+  "name": "Freddo espresso",
+  "order_type": null,
+  "unit": "pieces",
+  "interval": 0.8,
+  "forecast": [
+    { "date": "2026-01-16", "quantity": 142.0, "lower": 121.0, "upper": 165.0 },
+    { "date": "2026-01-17", "quantity": 182.0, "lower": 160.0, "upper": 205.0 }
+  ],
+  "model_version": "fc-v0.9"
+}
+
+BONUS: ωριαία πρόβλεψη
+----------------------
+Με την παράμετρο granularity=hour, κάθε εγγραφή του forecast[] έχει
+"datetime" (ISO 8601, αρχή της ώρας) αντί για "date".
+
+
+=====================================================================
+3. GET /metrics
+=====================================================================
+Επιστρέφει τις μετρικές με τις οποίες αξιολογήσατε τα μοντέλα σας και
+το εκτιμώμενο επιχειρησιακό όφελος.
+
+ΠΑΡΑΜΕΤΡΟΙ (query string)
+-------------------------
+business_id     Προαιρετικό. Μετρικές για ένα κατάστημα.
+                Αν λείπει: συνολικές μετρικές.
+
+ΑΠΑΝΤΗΣΗ (200)
+--------------
+{
+  "recommendations": {
+    "hit_rate_at_3": <number>,
+    "baseline_hit_rate_at_3": <number>,
+    "n_baskets": <integer>,
+    "test_period": { "from": "<YYYY-MM-DD>", "to": "<YYYY-MM-DD>" }
+  },
+  "forecast": {
+    "wape": <number>,
+    "baseline_wape": <number>,
+    "level": "<string>",
+    "n_series": <integer>,
+    "test_period": { "from": "<YYYY-MM-DD>", "to": "<YYYY-MM-DD>" }
+  },
+  "business_impact": {
+    "estimated_aov_uplift_pct": <number>,
+    "estimated_waste_reduction_pct": <number>,
+    "assumptions": "<string>"
+  },
+  "model_versions": {
+    "recommendations": "<string>",
+    "forecast": "<string>"
+  }
+}
+
+recommendations.hit_rate_at_3     Ποσοστό των καλαθιών του test set
+                                  όπου το προϊόν που «κρύψαμε» βρίσκεται
+                                  στις 3 προτάσεις (0–1, βλ. ορισμό).
+recommendations.baseline_hit_rate_at_3
+                                  Η ίδια μετρική για το baseline
+                                  («τα δημοφιλέστερα»).
+recommendations.n_baskets         Πόσα καλάθια μετρήθηκαν.
+forecast.wape                     Σφάλμα πρόβλεψης WAPE (0 = τέλεια,
+                                  βλ. ορισμό).
+forecast.baseline_wape            Το WAPE του baseline («ίδια ημέρα,
+                                  προηγούμενη εβδομάδα»).
+forecast.level                    Σε ποιο επίπεδο μετρήθηκε: product ή
+                                  category.
+forecast.n_series                 Πόσες χρονοσειρές μετρήθηκαν.
+test_period                       Η περίοδος του test set.
+business_impact.estimated_aov_uplift_pct
+                                  Εκτιμώμενη αύξηση του μέσου καλαθιού (%).
+business_impact.estimated_waste_reduction_pct
+                                  Εκτιμώμενη μείωση της φύρας (%).
+business_impact.assumptions       Σύντομη περιγραφή των παραδοχών πίσω
+                                  από τις εκτιμήσεις.
+model_versions                    Οι εκδόσεις των μοντέλων.
+
+ΟΡΙΣΜΟΙ ΜΕΤΡΙΚΩΝ
+----------------
+Hit-rate@3:
+  Για κάθε παραγγελία του test set με 2+ προϊόντα, αφαιρέστε ένα
+  προϊόν και ζητήστε 3 προτάσεις για τα υπόλοιπα. Αν το προϊόν που
+  αφαιρέσατε είναι μέσα στις 3 → επιτυχία.
+  Hit-rate@3 = επιτυχίες ÷ πλήθος δοκιμών.
+
+WAPE (Weighted Absolute Percentage Error):
+  WAPE = Σ |πραγματικά − πρόβλεψη| ÷ Σ πραγματικά,
+  πάνω σε όλες τις ημέρες και τις χρονοσειρές του test set.
+
+Χωρίστε train / test ΧΡΟΝΙΚΑ (π.χ. οι τελευταίες εβδομάδες για test),
+ποτέ τυχαία.
+
+
+=====================================================================
+4. GET /health (προαιρετικό)
+=====================================================================
+ΑΠΑΝΤΗΣΗ (200)
+{
+  "status": "ok",
+  "model_versions": { "recommendations": "<string>", "forecast": "<string>" }
+}
