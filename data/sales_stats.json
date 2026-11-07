@@ -11,8 +11,8 @@
       "name_en": "Coffee"
     },
     "price": 350,
-    "quantity": 404,
-    "total_amount": 145630,
+    "quantity": 473,
+    "total_amount": 170170,
     "discount_types": {},
     "sources": [
       {
@@ -20,8 +20,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 404,
-        "total_amount": 145630
+        "quantity": 473,
+        "total_amount": 170170
       }
     ]
   },
@@ -37,8 +37,8 @@
       "name_en": "Coffee"
     },
     "price": 400,
-    "quantity": 378,
-    "total_amount": 154650,
+    "quantity": 405,
+    "total_amount": 165550,
     "discount_types": {},
     "sources": [
       {
@@ -46,8 +46,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 378,
-        "total_amount": 154650
+        "quantity": 405,
+        "total_amount": 165550
       }
     ]
   },
@@ -63,8 +63,8 @@
       "name_en": "Coffee"
     },
     "price": 250,
-    "quantity": 221,
-    "total_amount": 57670,
+    "quantity": 329,
+    "total_amount": 85820,
     "discount_types": {},
     "sources": [
       {
@@ -72,8 +72,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 221,
-        "total_amount": 57670
+        "quantity": 329,
+        "total_amount": 85820
       }
     ]
   },
@@ -89,8 +89,8 @@
       "name_en": "Coffee"
     },
     "price": 300,
-    "quantity": 232,
-    "total_amount": 72000,
+    "quantity": 315,
+    "total_amount": 97670,
     "discount_types": {},
     "sources": [
       {
@@ -98,8 +98,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 232,
-        "total_amount": 72000
+        "quantity": 315,
+        "total_amount": 97670
       }
     ]
   },
@@ -115,8 +115,8 @@
       "name_en": "Coffee"
     },
     "price": 430,
-    "quantity": 265,
-    "total_amount": 116750,
+    "quantity": 324,
+    "total_amount": 142610,
     "discount_types": {},
     "sources": [
       {
@@ -124,8 +124,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 265,
-        "total_amount": 116750
+        "quantity": 324,
+        "total_amount": 142610
       }
     ]
   },
@@ -141,8 +141,8 @@
       "name_en": "Hot beverages"
     },
     "price": 420,
-    "quantity": 161,
-    "total_amount": 69020,
+    "quantity": 108,
+    "total_amount": 46410,
     "discount_types": {},
     "sources": [
       {
@@ -150,8 +150,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 161,
-        "total_amount": 69020
+        "quantity": 108,
+        "total_amount": 46410
       }
     ]
   },
@@ -167,8 +167,8 @@
       "name_en": "Hot beverages"
     },
     "price": 300,
-    "quantity": 130,
-    "total_amount": 40170,
+    "quantity": 92,
+    "total_amount": 28490,
     "discount_types": {},
     "sources": [
       {
@@ -176,8 +176,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 130,
-        "total_amount": 40170
+        "quantity": 92,
+        "total_amount": 28490
       }
     ]
   },
@@ -193,8 +193,8 @@
       "name_en": "Cold beverages"
     },
     "price": 450,
-    "quantity": 181,
-    "total_amount": 83200,
+    "quantity": 194,
+    "total_amount": 89360,
     "discount_types": {},
     "sources": [
       {
@@ -202,8 +202,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 181,
-        "total_amount": 83200
+        "quantity": 194,
+        "total_amount": 89360
       }
     ]
   },
@@ -219,8 +219,8 @@
       "name_en": "Cold beverages"
     },
     "price": 400,
-    "quantity": 147,
-    "total_amount": 60490,
+    "quantity": 135,
+    "total_amount": 55760,
     "discount_types": {},
     "sources": [
       {
@@ -228,8 +228,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 147,
-        "total_amount": 60490
+        "quantity": 135,
+        "total_amount": 55760
       }
     ]
   },
@@ -245,8 +245,8 @@
       "name_en": "Cold beverages"
     },
     "price": 250,
-    "quantity": 195,
-    "total_amount": 51050,
+    "quantity": 360,
+    "total_amount": 94710,
     "discount_types": {},
     "sources": [
       {
@@ -254,8 +254,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 195,
-        "total_amount": 51050
+        "quantity": 360,
+        "total_amount": 94710
       }
     ]
   },
@@ -271,8 +271,8 @@
       "name_en": "Cold beverages"
     },
     "price": 180,
-    "quantity": 123,
-    "total_amount": 23380,
+    "quantity": 143,
+    "total_amount": 27180,
     "discount_types": {},
     "sources": [
       {
@@ -280,8 +280,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 123,
-        "total_amount": 23380
+        "quantity": 143,
+        "total_amount": 27180
       }
     ]
   },
@@ -297,8 +297,8 @@
       "name_en": "Cold beverages"
     },
     "price": 100,
-    "quantity": 250,
-    "total_amount": 27070,
+    "quantity": 210,
+    "total_amount": 22610,
     "discount_types": {},
     "sources": [
       {
@@ -306,8 +306,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 250,
-        "total_amount": 27070
+        "quantity": 210,
+        "total_amount": 22610
       }
     ]
   },
@@ -323,8 +323,8 @@
       "name_en": "Breakfast"
     },
     "price": 120,
-    "quantity": 286,
-    "total_amount": 36790,
+    "quantity": 459,
+    "total_amount": 58720,
     "discount_types": {},
     "sources": [
       {
@@ -332,8 +332,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 286,
-        "total_amount": 36790
+        "quantity": 459,
+        "total_amount": 58720
       }
     ]
   },
@@ -349,8 +349,8 @@
       "name_en": "Breakfast"
     },
     "price": 230,
-    "quantity": 205,
-    "total_amount": 49280,
+    "quantity": 366,
+    "total_amount": 87620,
     "discount_types": {},
     "sources": [
       {
@@ -358,8 +358,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 205,
-        "total_amount": 49280
+        "quantity": 366,
+        "total_amount": 87620
       }
     ]
   },
@@ -375,8 +375,8 @@
       "name_en": "Breakfast"
     },
     "price": 320,
-    "quantity": 172,
-    "total_amount": 57040,
+    "quantity": 339,
+    "total_amount": 112710,
     "discount_types": {},
     "sources": [
       {
@@ -384,8 +384,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 172,
-        "total_amount": 57040
+        "quantity": 339,
+        "total_amount": 112710
       }
     ]
   },
@@ -401,8 +401,8 @@
       "name_en": "Breakfast"
     },
     "price": 420,
-    "quantity": 107,
-    "total_amount": 46090,
+    "quantity": 257,
+    "total_amount": 110950,
     "discount_types": {},
     "sources": [
       {
@@ -410,8 +410,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 107,
-        "total_amount": 46090
+        "quantity": 257,
+        "total_amount": 110950
       }
     ]
   },
@@ -427,8 +427,8 @@
       "name_en": "Sandwiches"
     },
     "price": 850,
-    "quantity": 284,
-    "total_amount": 249120,
+    "quantity": 294,
+    "total_amount": 258580,
     "discount_types": {},
     "sources": [
       {
@@ -436,8 +436,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 284,
-        "total_amount": 249120
+        "quantity": 294,
+        "total_amount": 258580
       }
     ]
   },
@@ -453,8 +453,8 @@
       "name_en": "Sandwiches"
     },
     "price": 780,
-    "quantity": 259,
-    "total_amount": 207230,
+    "quantity": 277,
+    "total_amount": 222770,
     "discount_types": {},
     "sources": [
       {
@@ -462,8 +462,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 259,
-        "total_amount": 207230
+        "quantity": 277,
+        "total_amount": 222770
       }
     ]
   },
@@ -479,8 +479,8 @@
       "name_en": "Sandwiches"
     },
     "price": 720,
-    "quantity": 157,
-    "total_amount": 116860,
+    "quantity": 205,
+    "total_amount": 152370,
     "discount_types": {},
     "sources": [
       {
@@ -488,8 +488,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 157,
-        "total_amount": 116860
+        "quantity": 205,
+        "total_amount": 152370
       }
     ]
   },
@@ -505,8 +505,8 @@
       "name_en": "Sandwiches"
     },
     "price": 560,
-    "quantity": 151,
-    "total_amount": 87860,
+    "quantity": 202,
+    "total_amount": 117380,
     "discount_types": {},
     "sources": [
       {
@@ -514,8 +514,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 151,
-        "total_amount": 87860
+        "quantity": 202,
+        "total_amount": 117380
       }
     ]
   },
@@ -531,8 +531,8 @@
       "name_en": "Food"
     },
     "price": 980,
-    "quantity": 236,
-    "total_amount": 240280,
+    "quantity": 102,
+    "total_amount": 103300,
     "discount_types": {},
     "sources": [
       {
@@ -540,8 +540,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 236,
-        "total_amount": 240280
+        "quantity": 102,
+        "total_amount": 103300
       }
     ]
   },
@@ -557,8 +557,8 @@
       "name_en": "Food"
     },
     "price": 900,
-    "quantity": 166,
-    "total_amount": 155140,
+    "quantity": 91,
+    "total_amount": 85270,
     "discount_types": {},
     "sources": [
       {
@@ -566,8 +566,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 166,
-        "total_amount": 155140
+        "quantity": 91,
+        "total_amount": 85270
       }
     ]
   },
@@ -583,8 +583,8 @@
       "name_en": "Food"
     },
     "price": 350,
-    "quantity": 283,
-    "total_amount": 102120,
+    "quantity": 303,
+    "total_amount": 109810,
     "discount_types": {},
     "sources": [
       {
@@ -592,8 +592,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 283,
-        "total_amount": 102120
+        "quantity": 303,
+        "total_amount": 109810
       }
     ]
   },
@@ -609,8 +609,8 @@
       "name_en": "Food"
     },
     "price": 780,
-    "quantity": 148,
-    "total_amount": 118850,
+    "quantity": 82,
+    "total_amount": 66100,
     "discount_types": {},
     "sources": [
       {
@@ -618,8 +618,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 148,
-        "total_amount": 118850
+        "quantity": 82,
+        "total_amount": 66100
       }
     ]
   },
@@ -635,8 +635,8 @@
       "name_en": "Food"
     },
     "price": 820,
-    "quantity": 110,
-    "total_amount": 91780,
+    "quantity": 92,
+    "total_amount": 77450,
     "discount_types": {},
     "sources": [
       {
@@ -644,8 +644,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 110,
-        "total_amount": 91780
+        "quantity": 92,
+        "total_amount": 77450
       }
     ]
   },
@@ -661,8 +661,8 @@
       "name_en": "Snacks"
     },
     "price": 300,
-    "quantity": 105,
-    "total_amount": 32710,
+    "quantity": 158,
+    "total_amount": 49100,
     "discount_types": {},
     "sources": [
       {
@@ -670,8 +670,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 105,
-        "total_amount": 32710
+        "quantity": 158,
+        "total_amount": 49100
       }
     ]
   },
@@ -687,8 +687,8 @@
       "name_en": "Snacks"
     },
     "price": 250,
-    "quantity": 103,
-    "total_amount": 26770,
+    "quantity": 136,
+    "total_amount": 35280,
     "discount_types": {},
     "sources": [
       {
@@ -696,8 +696,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 103,
-        "total_amount": 26770
+        "quantity": 136,
+        "total_amount": 35280
       }
     ]
   },
@@ -713,8 +713,8 @@
       "name_en": "Desserts"
     },
     "price": 520,
-    "quantity": 205,
-    "total_amount": 110390,
+    "quantity": 187,
+    "total_amount": 100580,
     "discount_types": {},
     "sources": [
       {
@@ -722,8 +722,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 205,
-        "total_amount": 110390
+        "quantity": 187,
+        "total_amount": 100580
       }
     ]
   },
@@ -739,8 +739,8 @@
       "name_en": "Desserts"
     },
     "price": 500,
-    "quantity": 165,
-    "total_amount": 85270,
+    "quantity": 142,
+    "total_amount": 73150,
     "discount_types": {},
     "sources": [
       {
@@ -748,8 +748,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 165,
-        "total_amount": 85270
+        "quantity": 142,
+        "total_amount": 73150
       }
     ]
   },
@@ -765,8 +765,8 @@
       "name_en": "Desserts"
     },
     "price": 450,
-    "quantity": 136,
-    "total_amount": 63810,
+    "quantity": 155,
+    "total_amount": 72360,
     "discount_types": {},
     "sources": [
       {
@@ -774,8 +774,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 136,
-        "total_amount": 63810
+        "quantity": 155,
+        "total_amount": 72360
       }
     ]
   },
@@ -791,8 +791,8 @@
       "name_en": "Desserts"
     },
     "price": 480,
-    "quantity": 192,
-    "total_amount": 95740,
+    "quantity": 161,
+    "total_amount": 79780,
     "discount_types": {},
     "sources": [
       {
@@ -800,8 +800,8 @@
           "menu_id": "shop_university_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 192,
-        "total_amount": 95740
+        "quantity": 161,
+        "total_amount": 79780
       }
     ]
   },
@@ -817,8 +817,8 @@
       "name_en": "Coffee"
     },
     "price": 350,
-    "quantity": 400,
-    "total_amount": 144460,
+    "quantity": 357,
+    "total_amount": 128880,
     "discount_types": {},
     "sources": [
       {
@@ -826,8 +826,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 400,
-        "total_amount": 144460
+        "quantity": 357,
+        "total_amount": 128880
       }
     ]
   },
@@ -843,8 +843,8 @@
       "name_en": "Coffee"
     },
     "price": 400,
-    "quantity": 327,
-    "total_amount": 133970,
+    "quantity": 347,
+    "total_amount": 142330,
     "discount_types": {},
     "sources": [
       {
@@ -852,8 +852,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 327,
-        "total_amount": 133970
+        "quantity": 347,
+        "total_amount": 142330
       }
     ]
   },
@@ -869,8 +869,8 @@
       "name_en": "Coffee"
     },
     "price": 250,
-    "quantity": 203,
-    "total_amount": 52820,
+    "quantity": 246,
+    "total_amount": 64040,
     "discount_types": {},
     "sources": [
       {
@@ -878,8 +878,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 203,
-        "total_amount": 52820
+        "quantity": 246,
+        "total_amount": 64040
       }
     ]
   },
@@ -895,8 +895,8 @@
       "name_en": "Coffee"
     },
     "price": 300,
-    "quantity": 196,
-    "total_amount": 60990,
+    "quantity": 284,
+    "total_amount": 88270,
     "discount_types": {},
     "sources": [
       {
@@ -904,8 +904,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 196,
-        "total_amount": 60990
+        "quantity": 284,
+        "total_amount": 88270
       }
     ]
   },
@@ -921,8 +921,8 @@
       "name_en": "Coffee"
     },
     "price": 430,
-    "quantity": 220,
-    "total_amount": 96910,
+    "quantity": 301,
+    "total_amount": 132310,
     "discount_types": {},
     "sources": [
       {
@@ -930,8 +930,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 220,
-        "total_amount": 96910
+        "quantity": 301,
+        "total_amount": 132310
       }
     ]
   },
@@ -947,8 +947,8 @@
       "name_en": "Hot beverages"
     },
     "price": 420,
-    "quantity": 151,
-    "total_amount": 64850,
+    "quantity": 115,
+    "total_amount": 49540,
     "discount_types": {},
     "sources": [
       {
@@ -956,8 +956,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 151,
-        "total_amount": 64850
+        "quantity": 115,
+        "total_amount": 49540
       }
     ]
   },
@@ -973,8 +973,8 @@
       "name_en": "Hot beverages"
     },
     "price": 300,
-    "quantity": 114,
-    "total_amount": 35320,
+    "quantity": 91,
+    "total_amount": 28210,
     "discount_types": {},
     "sources": [
       {
@@ -982,8 +982,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 114,
-        "total_amount": 35320
+        "quantity": 91,
+        "total_amount": 28210
       }
     ]
   },
@@ -999,8 +999,8 @@
       "name_en": "Cold beverages"
     },
     "price": 450,
-    "quantity": 174,
-    "total_amount": 80640,
+    "quantity": 192,
+    "total_amount": 89060,
     "discount_types": {},
     "sources": [
       {
@@ -1008,8 +1008,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 174,
-        "total_amount": 80640
+        "quantity": 192,
+        "total_amount": 89060
       }
     ]
   },
@@ -1025,8 +1025,8 @@
       "name_en": "Cold beverages"
     },
     "price": 400,
-    "quantity": 145,
-    "total_amount": 59780,
+    "quantity": 159,
+    "total_amount": 65690,
     "discount_types": {},
     "sources": [
       {
@@ -1034,8 +1034,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 145,
-        "total_amount": 59780
+        "quantity": 159,
+        "total_amount": 65690
       }
     ]
   },
@@ -1051,8 +1051,8 @@
       "name_en": "Cold beverages"
     },
     "price": 250,
-    "quantity": 160,
-    "total_amount": 42420,
+    "quantity": 519,
+    "total_amount": 137200,
     "discount_types": {},
     "sources": [
       {
@@ -1060,8 +1060,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 160,
-        "total_amount": 42420
+        "quantity": 519,
+        "total_amount": 137200
       }
     ]
   },
@@ -1077,8 +1077,8 @@
       "name_en": "Cold beverages"
     },
     "price": 180,
-    "quantity": 113,
-    "total_amount": 21470,
+    "quantity": 149,
+    "total_amount": 28370,
     "discount_types": {},
     "sources": [
       {
@@ -1086,8 +1086,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 113,
-        "total_amount": 21470
+        "quantity": 149,
+        "total_amount": 28370
       }
     ]
   },
@@ -1103,8 +1103,8 @@
       "name_en": "Cold beverages"
     },
     "price": 100,
-    "quantity": 217,
-    "total_amount": 23470,
+    "quantity": 220,
+    "total_amount": 23840,
     "discount_types": {},
     "sources": [
       {
@@ -1112,112 +1112,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 217,
-        "total_amount": 23470
-      }
-    ]
-  },
-  {
-    "id": "shop_commercial_prod_koulouri",
-    "name_gr": "Κουλούρι ολικής",
-    "name_en": "Whole wheat koulouri",
-    "internal_name": "whole wheat koulouri",
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "internal_name": "breakfast",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast"
-    },
-    "price": 120,
-    "quantity": 269,
-    "total_amount": 34450,
-    "discount_types": {},
-    "sources": [
-      {
-        "source": {
-          "menu_id": "shop_commercial_menu_main",
-          "menu_name": "Βασικός κατάλογος"
-        },
-        "quantity": 269,
-        "total_amount": 34450
-      }
-    ]
-  },
-  {
-    "id": "shop_commercial_prod_croissant",
-    "name_gr": "Κρουασάν βουτύρου",
-    "name_en": "Butter croissant",
-    "internal_name": "butter croissant",
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "internal_name": "breakfast",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast"
-    },
-    "price": 230,
-    "quantity": 211,
-    "total_amount": 50850,
-    "discount_types": {},
-    "sources": [
-      {
-        "source": {
-          "menu_id": "shop_commercial_menu_main",
-          "menu_name": "Βασικός κατάλογος"
-        },
-        "quantity": 211,
-        "total_amount": 50850
-      }
-    ]
-  },
-  {
-    "id": "shop_commercial_prod_spinach_pie",
-    "name_gr": "Σπανακόπιτα",
-    "name_en": "Spinach pie",
-    "internal_name": "spinach pie",
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "internal_name": "breakfast",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast"
-    },
-    "price": 320,
-    "quantity": 142,
-    "total_amount": 47250,
-    "discount_types": {},
-    "sources": [
-      {
-        "source": {
-          "menu_id": "shop_commercial_menu_main",
-          "menu_name": "Βασικός κατάλογος"
-        },
-        "quantity": 142,
-        "total_amount": 47250
-      }
-    ]
-  },
-  {
-    "id": "shop_commercial_prod_yogurt_honey",
-    "name_gr": "Γιαούρτι με μέλι",
-    "name_en": "Greek yogurt with honey",
-    "internal_name": "greek yogurt with honey",
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "internal_name": "breakfast",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast"
-    },
-    "price": 420,
-    "quantity": 112,
-    "total_amount": 48670,
-    "discount_types": {},
-    "sources": [
-      {
-        "source": {
-          "menu_id": "shop_commercial_menu_main",
-          "menu_name": "Βασικός κατάλογος"
-        },
-        "quantity": 112,
-        "total_amount": 48670
+        "quantity": 220,
+        "total_amount": 23840
       }
     ]
   },
@@ -1233,8 +1129,8 @@
       "name_en": "Sandwiches"
     },
     "price": 850,
-    "quantity": 239,
-    "total_amount": 209090,
+    "quantity": 380,
+    "total_amount": 334600,
     "discount_types": {},
     "sources": [
       {
@@ -1242,8 +1138,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 239,
-        "total_amount": 209090
+        "quantity": 380,
+        "total_amount": 334600
       }
     ]
   },
@@ -1259,8 +1155,8 @@
       "name_en": "Sandwiches"
     },
     "price": 780,
-    "quantity": 239,
-    "total_amount": 191970,
+    "quantity": 386,
+    "total_amount": 310740,
     "discount_types": {},
     "sources": [
       {
@@ -1268,8 +1164,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 239,
-        "total_amount": 191970
+        "quantity": 386,
+        "total_amount": 310740
       }
     ]
   },
@@ -1285,8 +1181,8 @@
       "name_en": "Sandwiches"
     },
     "price": 720,
-    "quantity": 148,
-    "total_amount": 109890,
+    "quantity": 289,
+    "total_amount": 215000,
     "discount_types": {},
     "sources": [
       {
@@ -1294,8 +1190,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 148,
-        "total_amount": 109890
+        "quantity": 289,
+        "total_amount": 215000
       }
     ]
   },
@@ -1311,8 +1207,8 @@
       "name_en": "Sandwiches"
     },
     "price": 560,
-    "quantity": 122,
-    "total_amount": 71060,
+    "quantity": 262,
+    "total_amount": 152820,
     "discount_types": {},
     "sources": [
       {
@@ -1320,8 +1216,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 122,
-        "total_amount": 71060
+        "quantity": 262,
+        "total_amount": 152820
       }
     ]
   },
@@ -1337,8 +1233,8 @@
       "name_en": "Food"
     },
     "price": 980,
-    "quantity": 216,
-    "total_amount": 220320,
+    "quantity": 259,
+    "total_amount": 263520,
     "discount_types": {},
     "sources": [
       {
@@ -1346,8 +1242,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 216,
-        "total_amount": 220320
+        "quantity": 259,
+        "total_amount": 263520
       }
     ]
   },
@@ -1363,8 +1259,8 @@
       "name_en": "Food"
     },
     "price": 900,
-    "quantity": 163,
-    "total_amount": 152720,
+    "quantity": 215,
+    "total_amount": 201150,
     "discount_types": {},
     "sources": [
       {
@@ -1372,8 +1268,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 163,
-        "total_amount": 152720
+        "quantity": 215,
+        "total_amount": 201150
       }
     ]
   },
@@ -1389,8 +1285,8 @@
       "name_en": "Food"
     },
     "price": 350,
-    "quantity": 235,
-    "total_amount": 85430,
+    "quantity": 563,
+    "total_amount": 204340,
     "discount_types": {},
     "sources": [
       {
@@ -1398,8 +1294,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 235,
-        "total_amount": 85430
+        "quantity": 563,
+        "total_amount": 204340
       }
     ]
   },
@@ -1415,8 +1311,8 @@
       "name_en": "Food"
     },
     "price": 780,
-    "quantity": 104,
-    "total_amount": 83360,
+    "quantity": 175,
+    "total_amount": 140930,
     "discount_types": {},
     "sources": [
       {
@@ -1424,8 +1320,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 104,
-        "total_amount": 83360
+        "quantity": 175,
+        "total_amount": 140930
       }
     ]
   },
@@ -1441,8 +1337,8 @@
       "name_en": "Food"
     },
     "price": 820,
-    "quantity": 104,
-    "total_amount": 87920,
+    "quantity": 168,
+    "total_amount": 141630,
     "discount_types": {},
     "sources": [
       {
@@ -1450,8 +1346,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 104,
-        "total_amount": 87920
+        "quantity": 168,
+        "total_amount": 141630
       }
     ]
   },
@@ -1467,8 +1363,8 @@
       "name_en": "Snacks"
     },
     "price": 300,
-    "quantity": 89,
-    "total_amount": 27850,
+    "quantity": 101,
+    "total_amount": 31620,
     "discount_types": {},
     "sources": [
       {
@@ -1476,8 +1372,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 89,
-        "total_amount": 27850
+        "quantity": 101,
+        "total_amount": 31620
       }
     ]
   },
@@ -1493,8 +1389,8 @@
       "name_en": "Snacks"
     },
     "price": 250,
-    "quantity": 113,
-    "total_amount": 29270,
+    "quantity": 117,
+    "total_amount": 30560,
     "discount_types": {},
     "sources": [
       {
@@ -1502,8 +1398,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 113,
-        "total_amount": 29270
+        "quantity": 117,
+        "total_amount": 30560
       }
     ]
   },
@@ -1519,8 +1415,8 @@
       "name_en": "Desserts"
     },
     "price": 520,
-    "quantity": 168,
-    "total_amount": 90310,
+    "quantity": 276,
+    "total_amount": 148650,
     "discount_types": {},
     "sources": [
       {
@@ -1528,8 +1424,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 168,
-        "total_amount": 90310
+        "quantity": 276,
+        "total_amount": 148650
       }
     ]
   },
@@ -1545,8 +1441,8 @@
       "name_en": "Desserts"
     },
     "price": 500,
-    "quantity": 155,
-    "total_amount": 80070,
+    "quantity": 250,
+    "total_amount": 129580,
     "discount_types": {},
     "sources": [
       {
@@ -1554,8 +1450,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 155,
-        "total_amount": 80070
+        "quantity": 250,
+        "total_amount": 129580
       }
     ]
   },
@@ -1571,8 +1467,8 @@
       "name_en": "Desserts"
     },
     "price": 450,
-    "quantity": 106,
-    "total_amount": 49840,
+    "quantity": 208,
+    "total_amount": 97330,
     "discount_types": {},
     "sources": [
       {
@@ -1580,8 +1476,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 106,
-        "total_amount": 49840
+        "quantity": 208,
+        "total_amount": 97330
       }
     ]
   },
@@ -1597,8 +1493,8 @@
       "name_en": "Desserts"
     },
     "price": 480,
-    "quantity": 177,
-    "total_amount": 88140,
+    "quantity": 253,
+    "total_amount": 125760,
     "discount_types": {},
     "sources": [
       {
@@ -1606,8 +1502,8 @@
           "menu_id": "shop_commercial_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 177,
-        "total_amount": 88140
+        "quantity": 253,
+        "total_amount": 125760
       }
     ]
   },
@@ -1623,8 +1519,8 @@
       "name_en": "Coffee"
     },
     "price": 350,
-    "quantity": 398,
-    "total_amount": 143580,
+    "quantity": 433,
+    "total_amount": 155900,
     "discount_types": {},
     "sources": [
       {
@@ -1632,8 +1528,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 398,
-        "total_amount": 143580
+        "quantity": 433,
+        "total_amount": 155900
       }
     ]
   },
@@ -1649,8 +1545,8 @@
       "name_en": "Coffee"
     },
     "price": 400,
-    "quantity": 367,
-    "total_amount": 150580,
+    "quantity": 404,
+    "total_amount": 165980,
     "discount_types": {},
     "sources": [
       {
@@ -1658,8 +1554,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 367,
-        "total_amount": 150580
+        "quantity": 404,
+        "total_amount": 165980
       }
     ]
   },
@@ -1675,8 +1571,8 @@
       "name_en": "Coffee"
     },
     "price": 250,
-    "quantity": 234,
-    "total_amount": 61190,
+    "quantity": 304,
+    "total_amount": 79170,
     "discount_types": {},
     "sources": [
       {
@@ -1684,8 +1580,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 234,
-        "total_amount": 61190
+        "quantity": 304,
+        "total_amount": 79170
       }
     ]
   },
@@ -1701,8 +1597,8 @@
       "name_en": "Coffee"
     },
     "price": 300,
-    "quantity": 245,
-    "total_amount": 76100,
+    "quantity": 319,
+    "total_amount": 98850,
     "discount_types": {},
     "sources": [
       {
@@ -1710,8 +1606,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 245,
-        "total_amount": 76100
+        "quantity": 319,
+        "total_amount": 98850
       }
     ]
   },
@@ -1727,8 +1623,8 @@
       "name_en": "Coffee"
     },
     "price": 430,
-    "quantity": 275,
-    "total_amount": 121370,
+    "quantity": 316,
+    "total_amount": 139340,
     "discount_types": {},
     "sources": [
       {
@@ -1736,8 +1632,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 275,
-        "total_amount": 121370
+        "quantity": 316,
+        "total_amount": 139340
       }
     ]
   },
@@ -1753,8 +1649,8 @@
       "name_en": "Hot beverages"
     },
     "price": 420,
-    "quantity": 162,
-    "total_amount": 69800,
+    "quantity": 121,
+    "total_amount": 51840,
     "discount_types": {},
     "sources": [
       {
@@ -1762,8 +1658,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 162,
-        "total_amount": 69800
+        "quantity": 121,
+        "total_amount": 51840
       }
     ]
   },
@@ -1779,8 +1675,8 @@
       "name_en": "Hot beverages"
     },
     "price": 300,
-    "quantity": 138,
-    "total_amount": 42320,
+    "quantity": 117,
+    "total_amount": 36360,
     "discount_types": {},
     "sources": [
       {
@@ -1788,8 +1684,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 138,
-        "total_amount": 42320
+        "quantity": 117,
+        "total_amount": 36360
       }
     ]
   },
@@ -1805,8 +1701,8 @@
       "name_en": "Cold beverages"
     },
     "price": 450,
-    "quantity": 205,
-    "total_amount": 94910,
+    "quantity": 233,
+    "total_amount": 107880,
     "discount_types": {},
     "sources": [
       {
@@ -1814,8 +1710,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 205,
-        "total_amount": 94910
+        "quantity": 233,
+        "total_amount": 107880
       }
     ]
   },
@@ -1831,8 +1727,8 @@
       "name_en": "Cold beverages"
     },
     "price": 400,
-    "quantity": 165,
-    "total_amount": 68150,
+    "quantity": 241,
+    "total_amount": 99270,
     "discount_types": {},
     "sources": [
       {
@@ -1840,8 +1736,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 165,
-        "total_amount": 68150
+        "quantity": 241,
+        "total_amount": 99270
       }
     ]
   },
@@ -1857,8 +1753,8 @@
       "name_en": "Cold beverages"
     },
     "price": 250,
-    "quantity": 200,
-    "total_amount": 52450,
+    "quantity": 529,
+    "total_amount": 139320,
     "discount_types": {},
     "sources": [
       {
@@ -1866,8 +1762,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 200,
-        "total_amount": 52450
+        "quantity": 529,
+        "total_amount": 139320
       }
     ]
   },
@@ -1883,8 +1779,8 @@
       "name_en": "Cold beverages"
     },
     "price": 180,
-    "quantity": 126,
-    "total_amount": 24210,
+    "quantity": 188,
+    "total_amount": 35960,
     "discount_types": {},
     "sources": [
       {
@@ -1892,8 +1788,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 126,
-        "total_amount": 24210
+        "quantity": 188,
+        "total_amount": 35960
       }
     ]
   },
@@ -1909,8 +1805,8 @@
       "name_en": "Cold beverages"
     },
     "price": 100,
-    "quantity": 309,
-    "total_amount": 33310,
+    "quantity": 302,
+    "total_amount": 32440,
     "discount_types": {},
     "sources": [
       {
@@ -1918,8 +1814,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 309,
-        "total_amount": 33310
+        "quantity": 302,
+        "total_amount": 32440
       }
     ]
   },
@@ -1935,8 +1831,8 @@
       "name_en": "Breakfast"
     },
     "price": 120,
-    "quantity": 294,
-    "total_amount": 37400,
+    "quantity": 334,
+    "total_amount": 42720,
     "discount_types": {},
     "sources": [
       {
@@ -1944,8 +1840,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 294,
-        "total_amount": 37400
+        "quantity": 334,
+        "total_amount": 42720
       }
     ]
   },
@@ -1961,8 +1857,8 @@
       "name_en": "Breakfast"
     },
     "price": 230,
-    "quantity": 242,
-    "total_amount": 58330,
+    "quantity": 272,
+    "total_amount": 65580,
     "discount_types": {},
     "sources": [
       {
@@ -1970,8 +1866,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 242,
-        "total_amount": 58330
+        "quantity": 272,
+        "total_amount": 65580
       }
     ]
   },
@@ -1987,8 +1883,8 @@
       "name_en": "Breakfast"
     },
     "price": 320,
-    "quantity": 165,
-    "total_amount": 54820,
+    "quantity": 251,
+    "total_amount": 83700,
     "discount_types": {},
     "sources": [
       {
@@ -1996,8 +1892,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 165,
-        "total_amount": 54820
+        "quantity": 251,
+        "total_amount": 83700
       }
     ]
   },
@@ -2013,8 +1909,8 @@
       "name_en": "Breakfast"
     },
     "price": 420,
-    "quantity": 137,
-    "total_amount": 59350,
+    "quantity": 203,
+    "total_amount": 87800,
     "discount_types": {},
     "sources": [
       {
@@ -2022,8 +1918,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 137,
-        "total_amount": 59350
+        "quantity": 203,
+        "total_amount": 87800
       }
     ]
   },
@@ -2039,8 +1935,8 @@
       "name_en": "Sandwiches"
     },
     "price": 850,
-    "quantity": 296,
-    "total_amount": 259170,
+    "quantity": 318,
+    "total_amount": 279120,
     "discount_types": {},
     "sources": [
       {
@@ -2048,8 +1944,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 296,
-        "total_amount": 259170
+        "quantity": 318,
+        "total_amount": 279120
       }
     ]
   },
@@ -2065,8 +1961,8 @@
       "name_en": "Sandwiches"
     },
     "price": 780,
-    "quantity": 273,
-    "total_amount": 218660,
+    "quantity": 327,
+    "total_amount": 262750,
     "discount_types": {},
     "sources": [
       {
@@ -2074,8 +1970,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 273,
-        "total_amount": 218660
+        "quantity": 327,
+        "total_amount": 262750
       }
     ]
   },
@@ -2091,8 +1987,8 @@
       "name_en": "Sandwiches"
     },
     "price": 720,
-    "quantity": 182,
-    "total_amount": 134880,
+    "quantity": 243,
+    "total_amount": 180970,
     "discount_types": {},
     "sources": [
       {
@@ -2100,8 +1996,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 182,
-        "total_amount": 134880
+        "quantity": 243,
+        "total_amount": 180970
       }
     ]
   },
@@ -2117,8 +2013,8 @@
       "name_en": "Sandwiches"
     },
     "price": 560,
-    "quantity": 147,
-    "total_amount": 85560,
+    "quantity": 220,
+    "total_amount": 128100,
     "discount_types": {},
     "sources": [
       {
@@ -2126,8 +2022,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 147,
-        "total_amount": 85560
+        "quantity": 220,
+        "total_amount": 128100
       }
     ]
   },
@@ -2143,8 +2039,8 @@
       "name_en": "Food"
     },
     "price": 980,
-    "quantity": 263,
-    "total_amount": 267240,
+    "quantity": 205,
+    "total_amount": 209680,
     "discount_types": {},
     "sources": [
       {
@@ -2152,8 +2048,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 263,
-        "total_amount": 267240
+        "quantity": 205,
+        "total_amount": 209680
       }
     ]
   },
@@ -2169,8 +2065,8 @@
       "name_en": "Food"
     },
     "price": 900,
-    "quantity": 181,
-    "total_amount": 169320,
+    "quantity": 199,
+    "total_amount": 185790,
     "discount_types": {},
     "sources": [
       {
@@ -2178,8 +2074,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 181,
-        "total_amount": 169320
+        "quantity": 199,
+        "total_amount": 185790
       }
     ]
   },
@@ -2195,8 +2091,8 @@
       "name_en": "Food"
     },
     "price": 350,
-    "quantity": 268,
-    "total_amount": 97390,
+    "quantity": 512,
+    "total_amount": 186430,
     "discount_types": {},
     "sources": [
       {
@@ -2204,8 +2100,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 268,
-        "total_amount": 97390
+        "quantity": 512,
+        "total_amount": 186430
       }
     ]
   },
@@ -2221,8 +2117,8 @@
       "name_en": "Food"
     },
     "price": 780,
-    "quantity": 142,
-    "total_amount": 114500,
+    "quantity": 169,
+    "total_amount": 136000,
     "discount_types": {},
     "sources": [
       {
@@ -2230,8 +2126,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 142,
-        "total_amount": 114500
+        "quantity": 169,
+        "total_amount": 136000
       }
     ]
   },
@@ -2247,8 +2143,8 @@
       "name_en": "Food"
     },
     "price": 820,
-    "quantity": 137,
-    "total_amount": 115320,
+    "quantity": 165,
+    "total_amount": 139860,
     "discount_types": {},
     "sources": [
       {
@@ -2256,8 +2152,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 137,
-        "total_amount": 115320
+        "quantity": 165,
+        "total_amount": 139860
       }
     ]
   },
@@ -2273,8 +2169,8 @@
       "name_en": "Snacks"
     },
     "price": 300,
-    "quantity": 116,
-    "total_amount": 36300,
+    "quantity": 131,
+    "total_amount": 41040,
     "discount_types": {},
     "sources": [
       {
@@ -2282,8 +2178,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 116,
-        "total_amount": 36300
+        "quantity": 131,
+        "total_amount": 41040
       }
     ]
   },
@@ -2299,8 +2195,8 @@
       "name_en": "Snacks"
     },
     "price": 250,
-    "quantity": 130,
-    "total_amount": 33850,
+    "quantity": 125,
+    "total_amount": 32470,
     "discount_types": {},
     "sources": [
       {
@@ -2308,8 +2204,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 130,
-        "total_amount": 33850
+        "quantity": 125,
+        "total_amount": 32470
       }
     ]
   },
@@ -2325,8 +2221,8 @@
       "name_en": "Desserts"
     },
     "price": 520,
-    "quantity": 200,
-    "total_amount": 107590,
+    "quantity": 267,
+    "total_amount": 143450,
     "discount_types": {},
     "sources": [
       {
@@ -2334,8 +2230,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 200,
-        "total_amount": 107590
+        "quantity": 267,
+        "total_amount": 143450
       }
     ]
   },
@@ -2351,8 +2247,8 @@
       "name_en": "Desserts"
     },
     "price": 500,
-    "quantity": 193,
-    "total_amount": 100410,
+    "quantity": 211,
+    "total_amount": 109100,
     "discount_types": {},
     "sources": [
       {
@@ -2360,8 +2256,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 193,
-        "total_amount": 100410
+        "quantity": 211,
+        "total_amount": 109100
       }
     ]
   },
@@ -2377,8 +2273,8 @@
       "name_en": "Desserts"
     },
     "price": 450,
-    "quantity": 118,
-    "total_amount": 55070,
+    "quantity": 160,
+    "total_amount": 74710,
     "discount_types": {},
     "sources": [
       {
@@ -2386,8 +2282,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 118,
-        "total_amount": 55070
+        "quantity": 160,
+        "total_amount": 74710
       }
     ]
   },
@@ -2403,8 +2299,8 @@
       "name_en": "Desserts"
     },
     "price": 480,
-    "quantity": 176,
-    "total_amount": 87970,
+    "quantity": 221,
+    "total_amount": 109680,
     "discount_types": {},
     "sources": [
       {
@@ -2412,8 +2308,8 @@
           "menu_id": "shop_tourist_menu_main",
           "menu_name": "Βασικός κατάλογος"
         },
-        "quantity": 176,
-        "total_amount": 87970
+        "quantity": 221,
+        "total_amount": 109680
       }
     ]
   }

@@ -31,7 +31,7 @@ API recommender.
 
 | Area | Current implementation |
 | --- | --- |
-| Recommendations | Popularity, co-occurrence, time-of-day scoring, and a same-category upsell rule |
+| Recommendations | Metadata-aware compatibility, conditional co-occurrence, context, popularity, explainable upsells, and diversity |
 | Forecasting | Same-weekday seasonal averages with heuristic uncertainty intervals |
 | Evaluation | Chronological recommendation evaluation and rolling-origin WAPE |
 | Data | Deterministic synthetic Dobby-format products, orders, and sales statistics |
@@ -119,31 +119,28 @@ channel value.
 
 #### Ranking
 
-For each eligible product not already in the cart, the production score is:
+The production score is normalized to `[0, 1]` and combines:
 
 ```text
-score = min(
-    1.0,
-    0.45 * normalized_popularity
-    + 0.30 * co_occurrence
-    + 0.25 * time_proximity
-)
+0.35 * catalog_compatibility
++ 0.25 * conditional_basket_purchase
++ 0.15 * time_context
++ 0.05 * normalized_popularity
++ 0.20 * upgrade_quality
 ```
 
-Where:
+Compatibility comes from catalog `complement_groups` metadata, while
+conditional basket purchase is computed from historical baskets that contain
+at least one cart item. Popularity is intentionally small so a popular but
+unrelated item cannot outrank a relevant complement. An upgrade receives a
+quality component only when its explicit `upgrade_group` and higher
+`upgrade_rank` identify it as a genuine, higher-priced replacement.
 
-- `normalized_popularity` is the product's historical item-row count divided
-  by the most frequent product count in the filtered history.
-- `co_occurrence` is the proportion of historical baskets containing cart
-  products that also contain the candidate.
-- `time_proximity` is the proportion of the candidate's historical sales
-  within two hours of the request hour.
-
-Products in the same category as a cart product and priced higher for the
-requested order type receive an additional capped `0.4` score bonus and are
-returned as `upsell` recommendations. Other recommendations are returned as
-`cross_sell`. Results are sorted by descending score and then product ID for
-deterministic output.
+The ranker excludes unavailable, unpublished, out-of-order-type, and
+already-carted products. It caps repeated categories and duplicate upgrade
+groups, and returns fewer than `limit` results when the evidence is weak.
+Reasons identify whether the result came from an upgrade, historical
+co-occurrence, or catalog compatibility.
 
 The returned price is in euro cents and is selected from:
 
@@ -153,14 +150,24 @@ The returned price is in euro cents and is selected from:
 
 #### Current limitations
 
-- The upsell classification is based on same-category and higher-price
-  eligibility, not a separately trained upgrade model.
-- The production score uses item occurrences for popularity rather than
-  quantity-weighted popularity.
-- Cart quantities, selections, and extras are validated but do not change the
-  ranking calculation.
-- The experimental association, similarity, and hybrid models are not wired
-  into the API.
+- Compatibility metadata is curated at catalog-generation time; production
+  catalogs should provide equivalent relationship metadata.
+- Cart quantities, selections, and extras are validated but do not yet change
+  the ranking calculation.
+- The experimental association, similarity, and hybrid modules remain
+  reusable offline implementations and are not the active API pipeline.
+
+### Synthetic data generation
+
+`src/generate_mock_data.py` uses a configurable seed and creates explicit
+product tags, complement groups, and upgrade groups. Orders select a primary
+product and then sample compatible companions rather than arbitrary products.
+Business profiles apply different category preferences, peak hours, order-type
+mixes, and weekend/season effects. Regenerate the committed fixtures with:
+
+```bash
+python -m src.generate_mock_data --seed 42 --days 300 --orders-per-day 12
+```
 
 ### Demand forecasting
 

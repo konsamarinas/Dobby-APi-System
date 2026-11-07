@@ -71,7 +71,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_university_prod_freddo_cappuccino",
@@ -145,7 +155,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 2
   },
   {
     "id": "shop_university_prod_espresso",
@@ -219,7 +239,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_university_prod_filter_coffee",
@@ -293,7 +323,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_iced_latte",
@@ -367,7 +407,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 3
   },
   {
     "id": "shop_university_prod_hot_chocolate",
@@ -441,7 +491,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_tea",
@@ -515,7 +576,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_fresh_orange",
@@ -589,7 +661,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_lemonade",
@@ -663,7 +746,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_soft_drink",
@@ -737,7 +831,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_sparkling_water",
@@ -811,7 +916,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_water",
@@ -885,7 +1001,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_koulouri",
@@ -959,7 +1086,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_croissant",
@@ -1033,7 +1171,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_spinach_pie",
@@ -1107,7 +1256,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_yogurt_honey",
@@ -1181,7 +1341,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_club_sandwich",
@@ -1255,7 +1426,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_chicken_wrap",
@@ -1329,7 +1511,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_tuna_baguette",
@@ -1403,7 +1596,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_veggie_toast",
@@ -1477,7 +1681,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_beef_burger",
@@ -1551,7 +1766,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_chicken_burger",
@@ -1625,7 +1851,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_fries",
@@ -1699,7 +1936,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_greek_salad",
@@ -1773,7 +2020,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_caesar_salad",
@@ -1847,7 +2104,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_nuts",
@@ -1921,7 +2188,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_granola_bar",
@@ -1995,7 +2272,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_cheesecake",
@@ -2069,7 +2356,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_chocolate_cake",
@@ -2143,7 +2439,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_apple_pie",
@@ -2217,7 +2522,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_university_prod_ice_cream",
@@ -2291,7 +2605,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_freddo_espresso",
@@ -2365,7 +2688,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_commercial_prod_freddo_cappuccino",
@@ -2439,7 +2772,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 2
   },
   {
     "id": "shop_commercial_prod_espresso",
@@ -2513,7 +2856,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_commercial_prod_filter_coffee",
@@ -2587,7 +2940,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_iced_latte",
@@ -2661,7 +3024,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 3
   },
   {
     "id": "shop_commercial_prod_hot_chocolate",
@@ -2735,7 +3108,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_tea",
@@ -2809,7 +3193,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_fresh_orange",
@@ -2883,7 +3278,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_lemonade",
@@ -2957,7 +3363,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_soft_drink",
@@ -3031,7 +3448,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_sparkling_water",
@@ -3105,7 +3533,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_water",
@@ -3179,303 +3618,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
-  },
-  {
-    "id": "shop_commercial_prod_koulouri",
-    "business_id": "shop_commercial",
-    "barcode_id": "",
-    "name_gr": "Κουλούρι ολικής",
-    "name_en": "Whole wheat koulouri",
-    "internal_name": "whole wheat koulouri",
-    "names": [
-      {
-        "name": "Κουλούρι ολικής",
-        "locale": "gr"
-      },
-      {
-        "name": "Whole wheat koulouri",
-        "locale": "en"
-      }
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
     ],
-    "description_gr": "Κουλούρι ολικής",
-    "description_en": "Whole wheat koulouri",
-    "visibility": {
-      "menu": true
-    },
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "business_id": "shop_commercial",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast",
-      "internal_name": "breakfast",
-      "names": [
-        {
-          "name": "Πρωινό",
-          "locale": "gr"
-        },
-        {
-          "name": "Breakfast",
-          "locale": "en"
-        }
-      ],
-      "print_order": 4,
-      "sequence": 4,
-      "product_sequence": null,
-      "order_types": [
-        "dine_in",
-        "delivery",
-        "takeaway"
-      ],
-      "created_at": "2026-01-01T00:00:00.000+02:00",
-      "updated_at": "2026-01-01T00:00:00.000+02:00"
-    },
-    "price_store": 120,
-    "price_delivery": 140,
-    "price_takeaway": 130,
-    "vat_rate": 13,
-    "vat_rate_delivery": 13,
-    "vat_rate_takeaway": 13,
-    "taxes": [],
-    "my_data_classification": {},
-    "published": true,
-    "available": true,
-    "order_types": [
-      "dine_in",
-      "delivery",
-      "takeaway"
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
     ],
-    "quantity_total": 1000,
-    "quantity_portion": 1,
-    "quantity_type": "pieces",
-    "quantity_notify": 20,
-    "enable_measurement": false,
-    "optional_ingredients": false,
-    "ingredients_ticket_show_selected": false,
-    "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
-  },
-  {
-    "id": "shop_commercial_prod_croissant",
-    "business_id": "shop_commercial",
-    "barcode_id": "",
-    "name_gr": "Κρουασάν βουτύρου",
-    "name_en": "Butter croissant",
-    "internal_name": "butter croissant",
-    "names": [
-      {
-        "name": "Κρουασάν βουτύρου",
-        "locale": "gr"
-      },
-      {
-        "name": "Butter croissant",
-        "locale": "en"
-      }
-    ],
-    "description_gr": "Κρουασάν βουτύρου",
-    "description_en": "Butter croissant",
-    "visibility": {
-      "menu": true
-    },
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "business_id": "shop_commercial",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast",
-      "internal_name": "breakfast",
-      "names": [
-        {
-          "name": "Πρωινό",
-          "locale": "gr"
-        },
-        {
-          "name": "Breakfast",
-          "locale": "en"
-        }
-      ],
-      "print_order": 4,
-      "sequence": 4,
-      "product_sequence": null,
-      "order_types": [
-        "dine_in",
-        "delivery",
-        "takeaway"
-      ],
-      "created_at": "2026-01-01T00:00:00.000+02:00",
-      "updated_at": "2026-01-01T00:00:00.000+02:00"
-    },
-    "price_store": 230,
-    "price_delivery": 260,
-    "price_takeaway": 240,
-    "vat_rate": 13,
-    "vat_rate_delivery": 13,
-    "vat_rate_takeaway": 13,
-    "taxes": [],
-    "my_data_classification": {},
-    "published": true,
-    "available": true,
-    "order_types": [
-      "dine_in",
-      "delivery",
-      "takeaway"
-    ],
-    "quantity_total": 1000,
-    "quantity_portion": 1,
-    "quantity_type": "pieces",
-    "quantity_notify": 20,
-    "enable_measurement": false,
-    "optional_ingredients": false,
-    "ingredients_ticket_show_selected": false,
-    "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
-  },
-  {
-    "id": "shop_commercial_prod_spinach_pie",
-    "business_id": "shop_commercial",
-    "barcode_id": "",
-    "name_gr": "Σπανακόπιτα",
-    "name_en": "Spinach pie",
-    "internal_name": "spinach pie",
-    "names": [
-      {
-        "name": "Σπανακόπιτα",
-        "locale": "gr"
-      },
-      {
-        "name": "Spinach pie",
-        "locale": "en"
-      }
-    ],
-    "description_gr": "Σπανακόπιτα",
-    "description_en": "Spinach pie",
-    "visibility": {
-      "menu": true
-    },
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "business_id": "shop_commercial",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast",
-      "internal_name": "breakfast",
-      "names": [
-        {
-          "name": "Πρωινό",
-          "locale": "gr"
-        },
-        {
-          "name": "Breakfast",
-          "locale": "en"
-        }
-      ],
-      "print_order": 4,
-      "sequence": 4,
-      "product_sequence": null,
-      "order_types": [
-        "dine_in",
-        "delivery",
-        "takeaway"
-      ],
-      "created_at": "2026-01-01T00:00:00.000+02:00",
-      "updated_at": "2026-01-01T00:00:00.000+02:00"
-    },
-    "price_store": 320,
-    "price_delivery": 360,
-    "price_takeaway": 330,
-    "vat_rate": 13,
-    "vat_rate_delivery": 13,
-    "vat_rate_takeaway": 13,
-    "taxes": [],
-    "my_data_classification": {},
-    "published": true,
-    "available": true,
-    "order_types": [
-      "dine_in",
-      "delivery",
-      "takeaway"
-    ],
-    "quantity_total": 1000,
-    "quantity_portion": 1,
-    "quantity_type": "pieces",
-    "quantity_notify": 20,
-    "enable_measurement": false,
-    "optional_ingredients": false,
-    "ingredients_ticket_show_selected": false,
-    "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
-  },
-  {
-    "id": "shop_commercial_prod_yogurt_honey",
-    "business_id": "shop_commercial",
-    "barcode_id": "",
-    "name_gr": "Γιαούρτι με μέλι",
-    "name_en": "Greek yogurt with honey",
-    "internal_name": "greek yogurt with honey",
-    "names": [
-      {
-        "name": "Γιαούρτι με μέλι",
-        "locale": "gr"
-      },
-      {
-        "name": "Greek yogurt with honey",
-        "locale": "en"
-      }
-    ],
-    "description_gr": "Γιαούρτι με μέλι",
-    "description_en": "Greek yogurt with honey",
-    "visibility": {
-      "menu": true
-    },
-    "category": {
-      "id": "shop_commercial_cat_breakfast",
-      "business_id": "shop_commercial",
-      "name_gr": "Πρωινό",
-      "name_en": "Breakfast",
-      "internal_name": "breakfast",
-      "names": [
-        {
-          "name": "Πρωινό",
-          "locale": "gr"
-        },
-        {
-          "name": "Breakfast",
-          "locale": "en"
-        }
-      ],
-      "print_order": 4,
-      "sequence": 4,
-      "product_sequence": null,
-      "order_types": [
-        "dine_in",
-        "delivery",
-        "takeaway"
-      ],
-      "created_at": "2026-01-01T00:00:00.000+02:00",
-      "updated_at": "2026-01-01T00:00:00.000+02:00"
-    },
-    "price_store": 420,
-    "price_delivery": 460,
-    "price_takeaway": 430,
-    "vat_rate": 13,
-    "vat_rate_delivery": 13,
-    "vat_rate_takeaway": 13,
-    "taxes": [],
-    "my_data_classification": {},
-    "published": true,
-    "available": true,
-    "order_types": [
-      "dine_in",
-      "delivery",
-      "takeaway"
-    ],
-    "quantity_total": 1000,
-    "quantity_portion": 1,
-    "quantity_type": "pieces",
-    "quantity_notify": 20,
-    "enable_measurement": false,
-    "optional_ingredients": false,
-    "ingredients_ticket_show_selected": false,
-    "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_club_sandwich",
@@ -3549,7 +3703,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_chicken_wrap",
@@ -3623,7 +3788,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_tuna_baguette",
@@ -3697,7 +3873,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_veggie_toast",
@@ -3771,7 +3958,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_beef_burger",
@@ -3845,7 +4043,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_chicken_burger",
@@ -3919,7 +4128,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_fries",
@@ -3993,7 +4213,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_greek_salad",
@@ -4067,7 +4297,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_caesar_salad",
@@ -4141,7 +4381,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_nuts",
@@ -4215,7 +4465,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_granola_bar",
@@ -4289,7 +4549,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_cheesecake",
@@ -4363,7 +4633,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_chocolate_cake",
@@ -4437,7 +4716,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_apple_pie",
@@ -4511,7 +4799,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_commercial_prod_ice_cream",
@@ -4585,7 +4882,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_freddo_espresso",
@@ -4659,7 +4965,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_tourist_prod_freddo_cappuccino",
@@ -4733,7 +5049,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 2
   },
   {
     "id": "shop_tourist_prod_espresso",
@@ -4807,7 +5133,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 1
   },
   {
     "id": "shop_tourist_prod_filter_coffee",
@@ -4881,7 +5217,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_iced_latte",
@@ -4955,7 +5301,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage",
+      "coffee"
+    ],
+    "complement_groups": [
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": "cold_coffee",
+    "upgrade_rank": 3
   },
   {
     "id": "shop_tourist_prod_hot_chocolate",
@@ -5029,7 +5385,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_tea",
@@ -5103,7 +5470,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_fresh_orange",
@@ -5177,7 +5555,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_lemonade",
@@ -5251,7 +5640,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_soft_drink",
@@ -5325,7 +5725,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_sparkling_water",
@@ -5399,7 +5810,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_water",
@@ -5473,7 +5895,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "beverage"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_breakfast",
+      "cat_dessert"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_koulouri",
@@ -5547,7 +5980,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_croissant",
@@ -5621,7 +6065,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_spinach_pie",
@@ -5695,7 +6150,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_yogurt_honey",
@@ -5769,7 +6235,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "breakfast",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_club_sandwich",
@@ -5843,7 +6320,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_chicken_wrap",
@@ -5917,7 +6405,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_tuna_baguette",
@@ -5991,7 +6490,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_veggie_toast",
@@ -6065,7 +6575,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_beef_burger",
@@ -6139,7 +6660,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_chicken_burger",
@@ -6213,7 +6745,18 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "main",
+      "savory"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_cold_beverage",
+      "cat_snack"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_fries",
@@ -6287,7 +6830,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_greek_salad",
@@ -6361,7 +6914,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_caesar_salad",
@@ -6435,7 +6998,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_nuts",
@@ -6509,7 +7082,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_granola_bar",
@@ -6583,7 +7166,17 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "side"
+    ],
+    "complement_groups": [
+      "cat_food",
+      "cat_sandwich",
+      "cat_coffee"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_cheesecake",
@@ -6657,7 +7250,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_chocolate_cake",
@@ -6731,7 +7333,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_apple_pie",
@@ -6805,7 +7416,16 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   },
   {
     "id": "shop_tourist_prod_ice_cream",
@@ -6879,6 +7499,15 @@
     "optional_ingredients": false,
     "ingredients_ticket_show_selected": false,
     "created_at": "2026-01-01T00:00:00.000+02:00",
-    "updated_at": "2026-01-01T00:00:00.000+02:00"
+    "updated_at": "2026-01-01T00:00:00.000+02:00",
+    "tags": [
+      "dessert"
+    ],
+    "complement_groups": [
+      "cat_coffee",
+      "cat_hot_beverage"
+    ],
+    "upgrade_group": null,
+    "upgrade_rank": null
   }
 ]

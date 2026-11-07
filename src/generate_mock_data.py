@@ -21,11 +21,23 @@ DEFAULT_ORDERS_PER_DAY = 12
 ORDER_TYPES = ("dine_in", "delivery", "takeaway")
 BUSINESSES = (
     {"id": "shop_university", "orders": 1.15, "weekend": 0.62, "season": 0.95,
-     "peaks": (1.45, 0.85, 0.85, 0.55), "types": (0.32, 0.18, 0.50)},
+     "peaks": (1.45, 0.85, 0.85, 0.55), "types": (0.32, 0.18, 0.50),
+     "category_preferences": {"cat_coffee": 1.5, "cat_breakfast": 1.45, "cat_snack": 1.25,
+                              "cat_food": 0.65, "cat_dessert": 0.75},
+     "catalog_categories": {"cat_coffee", "cat_cold_beverage", "cat_hot_beverage",
+                            "cat_breakfast", "cat_sandwich", "cat_food", "cat_snack", "cat_dessert"}},
     {"id": "shop_commercial", "orders": 1.0, "weekend": 0.72, "season": 1.0,
-     "peaks": (0.75, 1.55, 0.95, 0.85), "types": (0.42, 0.25, 0.33)},
+     "peaks": (0.75, 1.55, 0.95, 0.85), "types": (0.42, 0.25, 0.33),
+     "category_preferences": {"cat_food": 1.45, "cat_sandwich": 1.35, "cat_dessert": 1.2,
+                              "cat_coffee": 0.85, "cat_breakfast": 0.7},
+     "catalog_categories": {"cat_coffee", "cat_cold_beverage", "cat_hot_beverage",
+                            "cat_sandwich", "cat_food", "cat_snack", "cat_dessert"}},
     {"id": "shop_tourist", "orders": 0.82, "weekend": 1.35, "season": 1.18,
-     "peaks": (0.65, 0.85, 1.15, 1.5), "types": (0.50, 0.30, 0.20)},
+     "peaks": (0.65, 0.85, 1.15, 1.5), "types": (0.50, 0.30, 0.20),
+     "category_preferences": {"cat_dessert": 1.4, "cat_cold_beverage": 1.3,
+                              "cat_food": 1.15, "cat_breakfast": 0.9},
+     "catalog_categories": {"cat_coffee", "cat_cold_beverage", "cat_hot_beverage",
+                            "cat_breakfast", "cat_sandwich", "cat_food", "cat_snack", "cat_dessert"}},
 )
 
 CATEGORY_DEFINITIONS = [
@@ -100,10 +112,36 @@ def make_catalog(profile: dict[str, Any], start: datetime) -> list[dict[str, Any
     products = []
     for definition in PRODUCT_DEFINITIONS:
         identifier, name_gr, name_en, category_id, store, delivery, takeaway, vat, popularity = definition
+        if category_id not in profile.get("catalog_categories", set()):
+            continue
         cat = categories[category_id]
+        internal_name = name_en.lower()
+        if category_id == "cat_food" and "burger" in internal_name:
+            tags = ["main", "savory"]
+            complement_groups = ["cat_food", "cat_cold_beverage", "cat_snack"]
+        elif category_id in {"cat_sandwich", "cat_breakfast"}:
+            tags = ["main" if category_id == "cat_sandwich" else "breakfast", "savory"]
+            complement_groups = ["cat_coffee", "cat_cold_beverage", "cat_snack"]
+        elif category_id == "cat_coffee":
+            tags = ["beverage", "coffee"]
+            complement_groups = ["cat_breakfast", "cat_dessert"]
+        elif category_id in {"cat_cold_beverage", "cat_hot_beverage"}:
+            tags = ["beverage"]
+            complement_groups = ["cat_food", "cat_sandwich", "cat_breakfast", "cat_dessert"]
+        elif category_id == "cat_dessert":
+            tags = ["dessert"]
+            complement_groups = ["cat_coffee", "cat_hot_beverage"]
+        else:
+            tags = ["side" if category_id in {"cat_snack", "cat_food"} else category_id.removeprefix("cat_")]
+            complement_groups = ["cat_food", "cat_sandwich", "cat_coffee"]
+        upgrade_group = None
+        upgrade_rank = None
+        if category_id == "cat_coffee" and any(term in internal_name for term in ("freddo", "espresso", "latte")):
+            upgrade_group = "cold_coffee"
+            upgrade_rank = {"freddo espresso": 1, "freddo cappuccino": 2, "iced latte": 3}.get(internal_name, 1)
         products.append({
             "id": f"{business_id}_prod_{identifier}", "business_id": business_id, "barcode_id": "",
-            "name_gr": name_gr, "name_en": name_en, "internal_name": name_en.lower(),
+            "name_gr": name_gr, "name_en": name_en, "internal_name": internal_name,
             "names": [{"name": name_gr, "locale": "gr"}, {"name": name_en, "locale": "en"}],
             "description_gr": name_gr, "description_en": name_en, "visibility": {"menu": True},
             "category": cat, "price_store": store, "price_delivery": delivery, "price_takeaway": takeaway,
@@ -113,6 +151,8 @@ def make_catalog(profile: dict[str, Any], start: datetime) -> list[dict[str, Any
             "quantity_type": "pieces", "quantity_notify": 20, "enable_measurement": False,
             "optional_ingredients": False, "ingredients_ticket_show_selected": False,
             "created_at": now, "updated_at": now, "_popularity": popularity,
+            "tags": tags, "complement_groups": complement_groups,
+            "upgrade_group": upgrade_group, "upgrade_rank": upgrade_rank,
         })
     return products
 
@@ -126,7 +166,7 @@ def poisson(rng: random.Random, mean: float) -> int:
 
 
 def category_name(product: dict[str, Any]) -> str:
-    return product["category"]["id"].rsplit("_", 1)[-1]
+    return "cat_" + product["category"]["id"].split("_cat_", 1)[-1]
 
 
 def weighted_product(rng: random.Random, products: list[dict[str, Any]], profile: dict[str, Any],
@@ -135,6 +175,7 @@ def weighted_product(rng: random.Random, products: list[dict[str, Any]], profile
     weights = []
     for product in products:
         kind, weight = category_name(product), product["_popularity"] * peak
+        weight *= profile.get("category_preferences", {}).get(kind, 1.0)
         if kind == "cat_coffee":
             weight *= 1.6 if hour < 11 else 0.75 if hour >= 18 else 1.0
         if kind in {"cat_breakfast", "cat_sandwich"}:
@@ -153,6 +194,16 @@ def weighted_product(rng: random.Random, products: list[dict[str, Any]], profile
             weight *= 1.2
         weights.append(weight)
     return rng.choices(products, weights=weights, k=1)[0]
+
+
+def complementary_product(rng: random.Random, products: list[dict[str, Any]],
+                           selected: list[dict[str, Any]]) -> dict[str, Any] | None:
+    selected_ids = {product["id"] for product in selected}
+    groups = {group for product in selected for group in product.get("complement_groups", [])}
+    candidates = [product for product in products
+                  if product["id"] not in selected_ids
+                  and category_name(product) in groups]
+    return rng.choice(candidates) if candidates else None
 
 
 def make_item(product: dict[str, Any], order_type: str, item_id: str, created: datetime,
@@ -208,9 +259,13 @@ def make_orders(products: list[dict[str, Any]], profile: dict[str, Any], start: 
             order_type = rng.choices(ORDER_TYPES, weights=profile["types"], k=1)[0]
             selected = [weighted_product(rng, products, profile, order_type, hour, day.weekday(), day.month)]
             if rng.random() < (.30 if order_type == "delivery" else .45):
-                selected.append(weighted_product(rng, products, profile, order_type, hour, day.weekday(), day.month))
+                companion = complementary_product(rng, products, selected)
+                if companion:
+                    selected.append(companion)
             if rng.random() < .18:
-                selected.append(weighted_product(rng, products, profile, order_type, hour, day.weekday(), day.month))
+                companion = complementary_product(rng, products, selected)
+                if companion:
+                    selected.append(companion)
             anchor_kind = category_name(selected[0])
             if anchor_kind == "cat_coffee" and rng.random() < .48:
                 selected.append(rng.choice([p for p in breakfast if p["id"] not in {x["id"] for x in selected}]))

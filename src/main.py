@@ -26,7 +26,7 @@ from .forecasting.evaluation import rolling_origin_evaluation
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
-REC_MODEL_VERSION = "rec-v1.3"
+REC_MODEL_VERSION = "rec-v2.0"
 FORECAST_MODEL_VERSION = "fc-v1.0"
 ORDER_TYPES = {"dine_in", "delivery", "takeaway"}
 CHANNELS = {"waiter_app", "e_menu", "kiosk"}
@@ -226,52 +226,79 @@ def recommendation_candidates(
         cutoff = local_timestamp(before)
         rows = rows[rows["timestamp"] < cutoff]
     cart_ids = {item.product_id for item in request.cart}
+    product_by_id = {product["id"]: product for product in products}
     popularity = Counter(rows["product_id"]) if not rows.empty else Counter()
     max_popularity = max(popularity.values(), default=1)
+    request_hour = int(local_timestamp(request.timestamp).hour)
+    baskets: dict[str, set[str]] = defaultdict(set)
+    if not rows.empty:
+        for order_id, group in rows.groupby("order_id"):
+            baskets[str(order_id)] = set(group["product_id"])
+    cart_baskets = [basket for basket in baskets.values() if basket & cart_ids]
     candidates = []
     for product in products:
         product_id = product["id"]
         if product_id in cart_ids:
             continue
         product_rows = rows[rows["product_id"] == product_id] if not rows.empty else rows
-        time_score = 0.0
-        if not product_rows.empty:
-            hours = product_rows["timestamp"].dt.hour
-            request_hour = int(local_timestamp(request.timestamp).hour)
-            time_score = min(float(((hours - request_hour).abs() <= 2).mean()), 1.0)
-        co_occurrence = 0.0
-        if cart_ids and not rows.empty:
-            basket_ids = rows.loc[rows["product_id"].isin(cart_ids), "order_id"].unique()
-            co_occurrence = min(float(rows[(rows["order_id"].isin(basket_ids)) & (rows["product_id"] == product_id)].shape[0]) /
-                                max(len(basket_ids), 1), 1.0)
-        score = min(1.0, 0.45 * popularity[product_id] / max_popularity + 0.30 * co_occurrence + 0.25 * time_score)
-        category_id = product.get("category", {}).get("id", "")
-        replacement = next(
-            (cart_product for cart_product in products
-             if cart_product.get("id") in cart_ids
-             and cart_product.get("category", {}).get("id") == category_id
-             and product_price(product, request.order_type) > product_price(cart_product, request.order_type)),
-            None,
-        )
-        is_cross_sell = replacement is None
-        if replacement is not None:
-            score = min(1.0, score + 0.4)
-        candidates.append((score or 0.15, product, is_cross_sell, replacement))
+        time_score = (float(((product_rows["timestamp"].dt.hour - request_hour).abs() <= 2).mean())
+                      if not product_rows.empty else 0.0)
+        basket_count = sum(product_id in basket for basket in cart_baskets)
+        conditional = basket_count / len(cart_baskets) if cart_baskets else 0.0
+        cart_product = next((product_by_id[cart_id] for cart_id in cart_ids if cart_id in product_by_id
+                             and _product_complements(product_by_id[cart_id], product)), None)
+        replacement = next((product_by_id[cart_id] for cart_id in cart_ids if cart_id in product_by_id
+                            and _is_upgrade(product, product_by_id[cart_id])), None)
+        compatibility = 1.0 if cart_product is not None or replacement is not None else (conditional if conditional >= 0.08 else 0.0)
+        if cart_ids and compatibility == 0.0 and replacement is None:
+            continue
+        popularity_score = popularity[product_id] / max_popularity
+        score = (0.35 * compatibility + 0.25 * conditional + 0.15 * time_score
+                 + 0.05 * popularity_score + (0.20 if replacement else 0.0))
+        strongest = "compatibility" if compatibility >= conditional else "co_occurrence"
+        candidates.append((min(score, 1.0), product, replacement, strongest))
     candidates.sort(key=lambda value: (-value[0], value[1]["id"]))
     result = []
-    for score, product, is_cross_sell, replacement in candidates[:request.limit]:
-        kind = "cross_sell" if is_cross_sell else "upsell"
+    category_counts: Counter[str] = Counter()
+    upgrade_groups: set[str] = set()
+    for score, product, replacement, strongest in candidates:
+        category_id = product.get("category", {}).get("id", "")
+        upgrade_group = product.get("upgrade_group")
+        if category_counts[category_id] >= 2 or (upgrade_group and upgrade_group in upgrade_groups):
+            continue
+        is_upsell = replacement is not None
         replaced = replacement.get("id") if replacement else None
-        product_name = replacement.get("name_gr", "την επιλογή σας") if replacement else "τις επιλογές σας"
-        reason = (
-            f"Ταιριάζει υπέροχα με {product_name} και παραγγέλνεται συχνά μαζί του."
-            if is_cross_sell else f"Δημοφιλής αναβάθμιση του {product_name}."
-        )
+        base_name = replacement.get("name_gr", "την επιλογή σας") if replacement else product.get("name_gr", "")
+        if is_upsell:
+            reason = f"Αναβάθμιση από {base_name} με υψηλότερη βαθμίδα προϊόντος."
+        elif strongest == "co_occurrence":
+            reason = f"Παραγγέλνεται συχνά μαζί με προϊόντα του καλαθιού."
+        else:
+            reason = f"Συμπληρώνει το καλάθι σας σύμφωνα με τη σχέση του καταλόγου."
         result.append(Recommendation(product_id=product["id"], name=product.get("name_gr") or product.get("name_en", ""),
-                                     category_id=product.get("category", {}).get("id", ""), type=kind,
+                                     category_id=category_id, type="upsell" if is_upsell else "cross_sell",
                                      replaces_product_id=replaced, price=product_price(product, request.order_type),
                                      score=round(score, 4), reason=reason))
+        category_counts[category_id] += 1
+        if upgrade_group:
+            upgrade_groups.add(upgrade_group)
+        if len(result) >= request.limit:
+            break
     return result
+
+
+def _is_upgrade(candidate: dict[str, Any], original: dict[str, Any]) -> bool:
+    group = candidate.get("upgrade_group")
+    return bool(group and group == original.get("upgrade_group")
+                and candidate.get("upgrade_rank", 0) > original.get("upgrade_rank", 0)
+                and product_price(candidate, "dine_in") > product_price(original, "dine_in"))
+
+
+def _product_complements(original: dict[str, Any], candidate: dict[str, Any]) -> bool:
+    groups = set(original.get("complement_groups", []))
+    category = candidate.get("category", {})
+    category_id = "cat_" + str(category.get("id", "")).split("_cat_", 1)[-1]
+    return category.get("internal_name") in groups or category_id in groups or category.get("id") in groups
 
 
 @app.post("/recommendations", response_model=RecommendationResponse, response_model_exclude_none=True)
