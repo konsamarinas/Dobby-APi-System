@@ -1,0 +1,351 @@
+{
+  "methodology": "chronological 80/20 holdout; features use only observations before each target; no shuffle",
+  "businesses": {
+    "shop_commercial": {
+      "observations": 300,
+      "models": {
+        "seasonal_naive": {
+          "mae": 5.85,
+          "rmse": 7.5244,
+          "wape": 0.284,
+          "bias": 0.7833,
+          "n_observations": 60
+        },
+        "seasonal_average": {
+          "mae": 6.0333,
+          "rmse": 7.1903,
+          "wape": 0.2929,
+          "bias": 1.9042,
+          "n_observations": 60
+        },
+        "random_forest": {
+          "mae": 5.5462,
+          "rmse": 6.6138,
+          "wape": 0.2692,
+          "bias": 1.3947,
+          "n_observations": 60
+        }
+      }
+    },
+    "shop_tourist": {
+      "observations": 300,
+      "models": {
+        "seasonal_naive": {
+          "mae": 8.3333,
+          "rmse": 10.3376,
+          "wape": 0.3712,
+          "bias": 0.4,
+          "n_observations": 60
+        },
+        "seasonal_average": {
+          "mae": 6.1604,
+          "rmse": 7.8051,
+          "wape": 0.2744,
+          "bias": 3.1021,
+          "n_observations": 60
+        },
+        "random_forest": {
+          "mae": 6.5029,
+          "rmse": 8.1365,
+          "wape": 0.2897,
+          "bias": 2.2722,
+          "n_observations": 60
+        }
+      }
+    },
+    "shop_university": {
+      "observations": 300,
+      "models": {
+        "seasonal_naive": {
+          "mae": 11.2167,
+          "rmse": 14.668,
+          "wape": 0.5397,
+          "bias": 0.4167,
+          "n_observations": 60
+        },
+        "seasonal_average": {
+          "mae": 8.0354,
+          "rmse": 10.3095,
+          "wape": 0.3866,
+          "bias": 2.6271,
+          "n_observations": 60
+        },
+        "random_forest": {
+          "mae": 7.8158,
+          "rmse": 10.0179,
+          "wape": 0.3761,
+          "bias": 2.8609,
+          "n_observations": 60
+        }
+      }
+    }
+  },
+  "overall": {
+    "observations": 300,
+    "models": {
+      "seasonal_naive": {
+        "mae": 15.1333,
+        "rmse": 18.6217,
+        "wape": 0.2371,
+        "bias": 1.6,
+        "n_observations": 60
+      },
+      "seasonal_average": {
+        "mae": 14.0125,
+        "rmse": 16.315,
+        "wape": 0.2195,
+        "bias": 7.6333,
+        "n_observations": 60
+      },
+      "random_forest": {
+        "mae": 11.0721,
+        "rmse": 13.1359,
+        "wape": 0.1735,
+        "bias": 2.545,
+        "n_observations": 60
+      }
+    }
+  },
+  "product_samples": {
+    "shop_commercial": [
+      {
+        "product_id": "shop_commercial_prod_fries",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.25,
+            "rmse": 1.5111,
+            "wape": 0.75,
+            "bias": 0.0833,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 0.9437,
+            "rmse": 1.17,
+            "wape": 0.5663,
+            "bias": 0.1396,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 1.028,
+            "rmse": 1.2498,
+            "wape": 0.6168,
+            "bias": 0.2576,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_commercial_prod_soft_drink",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.0333,
+            "rmse": 1.4142,
+            "wape": 0.7848,
+            "bias": 0.0667,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.0042,
+            "rmse": 1.167,
+            "wape": 0.7627,
+            "bias": 0.2208,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 0.9197,
+            "rmse": 1.1059,
+            "wape": 0.6985,
+            "bias": 0.332,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_commercial_prod_chicken_wrap",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.1695,
+            "rmse": 1.4901,
+            "wape": 1.0299,
+            "bias": 0.0847,
+            "n_observations": 59
+          },
+          "seasonal_average": {
+            "mae": 0.9407,
+            "rmse": 1.204,
+            "wape": 0.8284,
+            "bias": 0.3051,
+            "n_observations": 59
+          },
+          "random_forest": {
+            "mae": 0.8997,
+            "rmse": 1.1322,
+            "wape": 0.7923,
+            "bias": 0.2848,
+            "n_observations": 59
+          }
+        }
+      }
+    ],
+    "shop_tourist": [
+      {
+        "product_id": "shop_tourist_prod_soft_drink",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.5167,
+            "rmse": 1.893,
+            "wape": 0.9286,
+            "bias": 0.1833,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.1708,
+            "rmse": 1.3368,
+            "wape": 0.7168,
+            "bias": 0.3333,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 1.1847,
+            "rmse": 1.3478,
+            "wape": 0.7253,
+            "bias": 0.2913,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_tourist_prod_fries",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.3333,
+            "rmse": 1.6733,
+            "wape": 0.9302,
+            "bias": 0.0667,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.0188,
+            "rmse": 1.2064,
+            "wape": 0.7108,
+            "bias": 0.1354,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 1.0014,
+            "rmse": 1.1977,
+            "wape": 0.6986,
+            "bias": 0.2167,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_tourist_prod_freddo_espresso",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.1667,
+            "rmse": 1.6228,
+            "wape": 0.9722,
+            "bias": 0.0,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 0.8771,
+            "rmse": 1.1575,
+            "wape": 0.7309,
+            "bias": 0.1396,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 0.9889,
+            "rmse": 1.2351,
+            "wape": 0.8241,
+            "bias": 0.2497,
+            "n_observations": 60
+          }
+        }
+      }
+    ],
+    "shop_university": [
+      {
+        "product_id": "shop_university_prod_freddo_espresso",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.3667,
+            "rmse": 1.7981,
+            "wape": 0.9318,
+            "bias": -0.0667,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.0771,
+            "rmse": 1.3242,
+            "wape": 0.7344,
+            "bias": -0.0479,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 1.0643,
+            "rmse": 1.3289,
+            "wape": 0.7257,
+            "bias": 0.1151,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_university_prod_koulouri",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.25,
+            "rmse": 1.7369,
+            "wape": 0.9375,
+            "bias": -0.05,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.025,
+            "rmse": 1.3241,
+            "wape": 0.7688,
+            "bias": 0.0708,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 1.0591,
+            "rmse": 1.3569,
+            "wape": 0.7943,
+            "bias": 0.2153,
+            "n_observations": 60
+          }
+        }
+      },
+      {
+        "product_id": "shop_university_prod_freddo_cappuccino",
+        "models": {
+          "seasonal_naive": {
+            "mae": 1.3667,
+            "rmse": 1.6733,
+            "wape": 1.2424,
+            "bias": 0.0333,
+            "n_observations": 60
+          },
+          "seasonal_average": {
+            "mae": 1.0042,
+            "rmse": 1.1911,
+            "wape": 0.9129,
+            "bias": 0.175,
+            "n_observations": 60
+          },
+          "random_forest": {
+            "mae": 0.9866,
+            "rmse": 1.163,
+            "wape": 0.8969,
+            "bias": 0.287,
+            "n_observations": 60
+          }
+        }
+      }
+    ]
+  }
+}

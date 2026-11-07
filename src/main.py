@@ -23,11 +23,17 @@ from .core.config import athens_today, cors_origins
 from .core.data_loader import load_datasets
 from .core.preprocessing import item_rows, local_date, local_timestamp, utc_timestamp
 from .forecasting.evaluation import rolling_origin_evaluation
+from .forecasting.engine import (
+    ModelMetrics,
+    forecast_series as engine_forecast_series,
+    recursive_forecast,
+    select_model,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 REC_MODEL_VERSION = "rec-v2.0"
-FORECAST_MODEL_VERSION = "fc-v1.0"
+FORECAST_MODEL_VERSION = "fc-v2.0"
 ORDER_TYPES = {"dine_in", "delivery", "takeaway"}
 CHANNELS = {"waiter_app", "e_menu", "kiosk"}
 BUSINESS_TIMEZONE = ZoneInfo("Europe/Athens")
@@ -99,6 +105,10 @@ class ForecastResponse(BaseModel):
     unit: Literal["pieces"] = "pieces"
     interval: float = 0.8
     forecast: list[ForecastPoint]
+    total_quantity: float
+    selected_model: str
+    evaluation_metrics: dict[str, dict[str, Any]] = Field(default_factory=dict)
+    interval_method: str = "validation residual estimate"
     model_version: str
 
 
@@ -307,26 +317,13 @@ def recommendations(request: RecommendationRequest) -> RecommendationResponse:
 
 
 def forecast_series(business_id: str, level: str, identifier: str, order_type: str | None) -> pd.Series:
-    rows = cached_item_rows(business_id, order_type)
-    if rows.empty:
-        return pd.Series(dtype=float)
-    key = "product_id" if level == "product" else "category_id"
-    rows = rows[rows[key] == identifier].dropna(subset=["timestamp"])
-    if rows.empty:
-        return pd.Series(dtype=float)
-    series = rows.groupby(rows["timestamp"].dt.floor("D"))["quantity"].sum().sort_index()
-    index = pd.date_range(series.index.min(), series.index.max(), freq="D")
-    return series.reindex(index, fill_value=0.0).astype(float)
+    return engine_forecast_series(cached_item_rows(business_id, order_type), level, identifier)
 
 
-def seasonal_forecast(series: pd.Series, target: date) -> tuple[float, float, float]:
-    if series.empty:
-        return 0.0, 0.0, 0.0
-    values = series[series.index.day_of_week == target.weekday()]
-    quantity = float(values.tail(8).mean()) if not values.empty else float(series.tail(28).mean())
-    residuals = (values - quantity).abs()
-    spread = float(residuals.tail(8).mean()) if not residuals.empty else math.sqrt(quantity)
-    return max(0.0, quantity), max(0.0, quantity - 1.28 * spread), max(quantity, quantity + 1.28 * spread)
+@lru_cache(maxsize=64)
+def cached_forecast_selection(business_id: str, level: str, identifier: str,
+                              order_type: str | None) -> tuple[str, dict[str, ModelMetrics]]:
+    return select_model(forecast_series(business_id, level, identifier, order_type))
 
 
 @app.get("/forecast", response_model=ForecastResponse)
@@ -348,14 +345,18 @@ def forecast(
     name = product.get("name_gr", "") if product else category_product["category"].get("name_gr", "")
     series = forecast_series(business_id, level, id, order_type)
     forecast_start = start_date or (athens_today() + timedelta(days=1))
-    points = []
-    for offset in range(horizon):
-        target = forecast_start + timedelta(days=offset)
-        quantity, lower, upper = seasonal_forecast(series, target)
-        points.append(ForecastPoint(date=target, quantity=round(quantity, 2),
-                                    lower=round(min(lower, quantity), 2), upper=round(max(upper, quantity), 2)))
+    selected_model, model_metrics = cached_forecast_selection(business_id, level, id, order_type)
+    points = [
+        ForecastPoint(date=target, quantity=round(quantity, 2),
+                      lower=round(lower, 2), upper=round(upper, 2))
+        for target, quantity, lower, upper in recursive_forecast(series, forecast_start, horizon, selected_model)
+    ]
     return ForecastResponse(business_id=business_id, level=level, id=id, name=name,
-                            order_type=order_type, forecast=points, model_version=FORECAST_MODEL_VERSION)
+                            order_type=order_type, forecast=points,
+                            total_quantity=round(sum(point.quantity for point in points), 2),
+                            selected_model=selected_model,
+                            evaluation_metrics={model: metrics.as_dict() for model, metrics in model_metrics.items()},
+                            model_version=FORECAST_MODEL_VERSION)
 
 
 def _calculate_metrics(business_id: str | None = None) -> dict[str, Any]:

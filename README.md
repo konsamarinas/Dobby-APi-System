@@ -171,9 +171,9 @@ python -m src.generate_mock_data --seed 42 --days 300 --orders-per-day 12
 
 ### Demand forecasting
 
-The `/forecast` endpoint uses the `forecast_series()` and
-`seasonal_forecast()` logic in [`src/main.py`](./src/main.py), also represented
-in [`src/forecasting/engine.py`](./src/forecasting/engine.py).
+The `/forecast` endpoint uses the centralized, leakage-safe implementation in
+[`src/forecasting/engine.py`](./src/forecasting/engine.py), called by
+[`src/main.py`](./src/main.py). The production model version is `fc-v2.0`.
 
 #### Forecast behavior
 
@@ -189,11 +189,26 @@ in [`src/forecasting/engine.py`](./src/forecasting/engine.py).
 - Optional `order_type` filtering supports `dine_in`, `delivery`, and
   `takeaway`.
 
-For a target weekday, the forecast is the mean of the most recent eight
-historical observations for that weekday. If no matching weekday exists, the
-implementation falls back to the recent series mean. The lower and upper
-values are heuristic bounds derived from mean absolute residual spread using
-`1.28` as the multiplier. Bounds are clamped so that:
+Three models are available:
+
+- `seasonal_naive`: the most recent observation for the target weekday.
+- `seasonal_average`: the mean of the previous eight observations for the
+  target weekday, retaining the original `fc-v1.0` behavior.
+- `random_forest`: a deterministic `RandomForestRegressor` using calendar
+  fields, lags 1/7/14/28, and lagged rolling means and standard deviations.
+
+Features are built only from dates before the prediction target. Missing
+calendar dates are represented as zero sales. For multi-day forecasts,
+predictions are appended to the history and used for later lag features.
+
+Model selection uses a chronological validation slice (the first 80% of the
+available history, with its final 20% used for validation). Random Forest is
+selected only when it has enough history and has the lowest validation WAPE;
+otherwise Seasonal Average is used. The final API forecast is therefore not
+selected using its future holdout.
+
+The lower and upper values are validation-residual estimates. They are not
+calibrated statistical confidence intervals. Bounds are clamped so that:
 
 ```text
 0 <= lower <= quantity <= upper
@@ -201,16 +216,59 @@ values are heuristic bounds derived from mean absolute residual spread using
 
 Forecast quantities are expected demand in pieces, represented as floating
 point values. They are not guaranteed to be integer production quantities.
-The `interval` response field is `0.8`, identifying the documented nominal
-80% interval level; the implementation's bounds are heuristic and should not
-be interpreted as calibrated statistical confidence intervals.
+The response identifies the interval method explicitly as
+`validation residual estimate`.
+
+#### Measured model comparison
+
+The committed report in
+[`data/forecast_evaluation.json`](./data/forecast_evaluation.json) was
+generated from the current 300-day synthetic dataset using the same
+chronological 80/20 holdout for every model. The following are the overall
+business totals; WAPE is the primary selection metric.
+
+| Model | MAE | RMSE | WAPE | Bias |
+| --- | ---: | ---: | ---: | ---: |
+| Seasonal Naive | 15.1333 | 18.6217 | 0.2371 | 1.6000 |
+| Seasonal Average | 14.0125 | 16.3150 | 0.2195 | 7.6333 |
+| Random Forest | 11.0721 | 13.1359 | 0.1735 | 2.5450 |
+
+Random Forest performed best overall and was also best for the commercial and
+university profiles; Seasonal Average remained best for the tourist profile.
+The API selects per series using validation, so this report is evidence rather
+than a hardcoded model choice. These results describe synthetic data only and
+are not evidence of real-world accuracy. The report also contains measured
+samples for the three highest-volume products in each business.
+
+The response adds `total_quantity`, `selected_model`,
+`evaluation_metrics`, and `interval_method` while preserving all existing
+request parameters and existing forecast fields. Example:
+
+```http
+GET /forecast?business_id=shop_university&level=product&id=shop_university_prod_freddo_espresso&horizon=7
+```
+
+```json
+{
+  "business_id": "shop_university",
+  "level": "product",
+  "id": "shop_university_prod_freddo_espresso",
+  "forecast": [{"date": "2026-11-08", "quantity": 12.4, "lower": 8.1, "upper": 16.7}],
+  "total_quantity": 83.2,
+  "selected_model": "random_forest",
+  "interval_method": "validation residual estimate",
+  "model_version": "fc-v2.0"
+}
+```
 
 #### Forecast limitations
 
-- The model is a simple seasonal baseline rather than a full probabilistic
-  forecasting model.
-- It does not model promotions, weather, staffing, inventory constraints, or
-  external events.
+- The data is synthetic and does not include promotions, weather, staffing,
+  holidays, or stock-outs.
+- Prediction intervals are useful uncertainty estimates but are not calibrated
+  probabilistic intervals.
+- Inventory replenishment is not exposed because the fixture has no reliable
+  current-stock field.
 - Category and product forecasts are independently calculated and are only
   approximately additive after rounding.
 
