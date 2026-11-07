@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 fastapi>=0.115,<1
 uvicorn[standard]>=0.34,<1
 pandas>=2.2,<4
 numpy>=2,<3
 pydantic>=2.10,<3
+=======
+>>>>>>> 2f1c02dfc575cadbfd5c56881f1ef108f4ae8848
 annotated-doc==0.0.5
 annotated-types==0.8.0
 anyio==4.16.0
